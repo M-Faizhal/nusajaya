@@ -34,17 +34,17 @@
                             <div class="product-image h-100 rounded-start overflow-hidden">
                                 @switch($product['slug'])
                                     @case('penyiapan-lahan')
-                                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                                        <img src="{{ asset('images/services/earthworks.jpg') }}"
                                              alt="Penyiapan lahan service"
                                              class="img-fluid h-100 w-100" style="object-fit: cover;">
                                         @break
                                     @case('konstruksi')
-                                        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                                        <img src="{{ asset('images/services/konstruksi.jpg') }}"
                                              alt="Konstruksi service"
                                              class="img-fluid h-100 w-100" style="object-fit: cover;">
                                         @break
                                     @case('sewa-alat-konstruksi')
-                                        <img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                                        <img src="{{ asset('images/services/alat-berat.jpg') }}"
                                              alt="Sewa alat konstruksi service"
                                              class="img-fluid h-100 w-100" style="object-fit: cover;">
                                         @break
@@ -146,17 +146,17 @@
                 <div class="equipment-gallery">
                     <div class="row">
                         <div class="col-md-4 mb-3">
-                            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                            <img src="{{ asset('images/services/mini-excavator.jpg') }}"
                                  alt="Mini excavator"
                                  class="img-fluid rounded-4 shadow-sm equipment-gallery-img">
                         </div>
                         <div class="col-md-4 mb-3">
-                            <img src="https://images.unsplash.com/photo-1592062412843-25c7b45c20c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                            <img src="{{ asset('images/services/medium-excavator.jpg') }}"
                                  alt="Medium excavator"
                                  class="img-fluid rounded-4 shadow-sm equipment-gallery-img">
                         </div>
                         <div class="col-md-4 mb-3">
-                            <img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                            <img src="{{ asset('images/services/large-excavator.jpg') }}"
                                  alt="Large excavator"
                                  class="img-fluid rounded-4 shadow-sm equipment-gallery-img">
                         </div>
@@ -226,9 +226,6 @@
                 <div class="cta-buttons">
                     <a href="{{ route('contact') }}" class="btn btn-light btn-lg me-2 mb-2 mb-sm-0">
                         <i class="fas fa-phone me-2"></i>Konsultasi Gratis
-                    </a>
-                    <a href="https://wa.me/6281234567890" class="btn btn-success btn-lg mb-2 mb-sm-0" target="_blank">
-                        <i class="fab fa-whatsapp me-2"></i>WhatsApp
                     </a>
                 </div>
             </div>
