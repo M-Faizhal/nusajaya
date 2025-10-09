@@ -28,12 +28,12 @@
         <div class="row mb-5">
             <div class="col-lg-8 mx-auto">
                 <div class="office-image text-center">
-                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
-                         alt="Nusajaya office building" 
-                         class="img-fluid rounded-4 shadow">
+                    <img src="{{ asset('images/nusajaya.jpeg') }}"
+                         alt="Nusajaya Logo"
+                         class="img-fluid rounded-4 shadow" style="max-width: 400px;">
                     <div class="mt-3">
-                        <h4 class="fw-bold">Kantor Pusat Nusajaya</h4>
-                        <p class="text-muted">Jl. Contoh Alamat No. 123, Jakarta Selatan</p>
+                        <h4 class="fw-bold">Kantor Nusajaya</h4>
+                        <p class="text-muted">Manggarai Selatan, Tebet, Jakarta Selatan</p>
                     </div>
                 </div>
             </div>
@@ -53,8 +53,7 @@
                     <h5 class="fw-bold mb-3">Telepon</h5>
                     <p class="text-muted mb-3">Hubungi kami langsung untuk konsultasi cepat</p>
                     <div class="contact-details">
-                        <p class="mb-2"><strong>+62 21 1234 5678</strong></p>
-                        <p class="mb-2"><strong>+62 812 3456 7890</strong></p>
+                        <p class="mb-2"><strong>+62 852 3107 7779</strong></p>
                         <small class="text-muted">Senin - Sabtu: 08:00 - 17:00</small>
                     </div>
                 </div>
@@ -69,7 +68,6 @@
                     <p class="text-muted mb-3">Kirim pertanyaan detail tentang proyek Anda</p>
                     <div class="contact-details">
                         <p class="mb-2"><strong>info@nusajaya.com</strong></p>
-                        <p class="mb-2"><strong>sales@nusajaya.com</strong></p>
                         <small class="text-muted">Respon dalam 2-4 jam kerja</small>
                     </div>
                 </div>
@@ -83,8 +81,8 @@
                     <h5 class="fw-bold mb-3">Alamat Kantor</h5>
                     <p class="text-muted mb-3">Kunjungi kantor kami untuk diskusi langsung</p>
                     <div class="contact-details">
-                        <p class="mb-2"><strong>Jl. Contoh Alamat No. 123</strong></p>
-                        <p class="mb-2">Jakarta Selatan 12345</p>
+                        <p class="mb-2"><strong>Manggarai Selatan</strong></p>
+                        <p class="mb-2">Tebet, Jakarta Selatan</p>
                         <small class="text-muted">Indonesia</small>
                     </div>
                 </div>
@@ -143,10 +141,9 @@
                                 <label for="subject" class="form-label">Layanan yang Dibutuhkan *</label>
                                 <select class="form-select @error('subject') is-invalid @enderror" id="subject" name="subject" required>
                                     <option value="">Pilih layanan...</option>
-                                    <option value="Land Clearing" {{ old('subject') == 'Land Clearing' ? 'selected' : '' }}>Land Clearing</option>
-                                    <option value="Penimbunan" {{ old('subject') == 'Penimbunan' ? 'selected' : '' }}>Penimbunan</option>
-                                    <option value="Pengurukan" {{ old('subject') == 'Pengurukan' ? 'selected' : '' }}>Pengurukan</option>
-                                    <option value="Persewaan Excavator" {{ old('subject') == 'Persewaan Excavator' ? 'selected' : '' }}>Persewaan Excavator</option>
+                                    <option value="Penyiapan Lahan" {{ old('subject') == 'Penyiapan Lahan' ? 'selected' : '' }}>Penyiapan Lahan</option>
+                                    <option value="Konstruksi" {{ old('subject') == 'Konstruksi' ? 'selected' : '' }}>Konstruksi</option>
+                                    <option value="Sewa Alat Konstruksi" {{ old('subject') == 'Sewa Alat Konstruksi' ? 'selected' : '' }}>Sewa Alat Konstruksi</option>
                                     <option value="Konsultasi Umum" {{ old('subject') == 'Konsultasi Umum' ? 'selected' : '' }}>Konsultasi Umum</option>
                                     <option value="Lainnya" {{ old('subject') == 'Lainnya' ? 'selected' : '' }}>Lainnya</option>
                                 </select>
@@ -178,87 +175,10 @@
                     <!-- Team Image -->
                     <div class="sidebar-widget bg-white border rounded-4 p-4 mb-4">
                         <h5 class="fw-bold mb-3">Tim Profesional Kami</h5>
-                        <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
-                             alt="Professional construction team" 
+                        <img src="{{ asset('images/nusajaya.jpeg') }}"
+                             alt="Nusajaya Professional Team"
                              class="img-fluid rounded-4 mb-3">
-                        <p class="text-muted mb-0">Tim ahli dengan pengalaman lebih dari 25 tahun di industri konstruksi dan earthwork.</p>
-                    </div>
-                    
-                    <!-- Quick Contact -->
-                    <div class="sidebar-widget bg-primary text-white rounded-4 p-4 mb-4">
-                        <h5 class="fw-bold mb-3">Butuh Respon Cepat?</h5>
-                        <p class="mb-3">Hubungi langsung via WhatsApp untuk mendapatkan respon dalam hitungan menit!</p>
-                        <a href="https://wa.me/6281234567890" class="btn btn-success w-100" target="_blank">
-                            <i class="fab fa-whatsapp me-2"></i>Chat WhatsApp
-                        </a>
-                    </div>
-
-                    <!-- Business Hours -->
-                    <div class="sidebar-widget bg-white border rounded-4 p-4 mb-4">
-                        <h5 class="fw-bold mb-3">Jam Operasional</h5>
-                        <div class="business-hours">
-                            <div class="d-flex justify-content-between mb-2">
-                                <span>Senin - Jumat</span>
-                                <span class="fw-bold">08:00 - 17:00</span>
-                            </div>
-                            <div class="d-flex justify-content-between mb-2">
-                                <span>Sabtu</span>
-                                <span class="fw-bold">08:00 - 15:00</span>
-                            </div>
-                            <div class="d-flex justify-content-between mb-2">
-                                <span>Minggu</span>
-                                <span class="text-muted">Tutup</span>
-                            </div>
-                            <hr>
-                            <div class="current-status">
-                                @php
-                                    $currentHour = now()->format('H');
-                                    $currentDay = now()->format('N'); // Monday = 1, Sunday = 7
-                                    $isOpen = false;
-
-                                    if ($currentDay >= 1 && $currentDay <= 5) { // Monday to Friday
-                                        $isOpen = $currentHour >= 8 && $currentHour < 17;
-                                    } elseif ($currentDay == 6) { // Saturday
-                                        $isOpen = $currentHour >= 8 && $currentHour < 15;
-                                    }
-                                @endphp
-
-                                @if($isOpen)
-                                    <span class="badge bg-success">
-                                        <i class="fas fa-circle me-1"></i>Sedang Buka
-                                    </span>
-                                @else
-                                    <span class="badge bg-danger">
-                                        <i class="fas fa-circle me-1"></i>Sedang Tutup
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Coverage Area -->
-                    <div class="sidebar-widget bg-white border rounded-4 p-4 mb-4">
-                        <h5 class="fw-bold mb-3">Area Layanan</h5>
-                        <ul class="list-unstyled">
-                            <li class="mb-2"><i class="fas fa-map-marker-alt text-primary me-2"></i>Jakarta & Sekitarnya</li>
-                            <li class="mb-2"><i class="fas fa-map-marker-alt text-primary me-2"></i>Bogor</li>
-                            <li class="mb-2"><i class="fas fa-map-marker-alt text-primary me-2"></i>Depok</li>
-                            <li class="mb-2"><i class="fas fa-map-marker-alt text-primary me-2"></i>Tangerang</li>
-                            <li class="mb-2"><i class="fas fa-map-marker-alt text-primary me-2"></i>Bekasi</li>
-                            <li class="mb-2"><i class="fas fa-map-marker-alt text-primary me-2"></i>Area Lain (dengan biaya mobilisasi)</li>
-                        </ul>
-                    </div>
-
-                    <!-- Emergency Contact -->
-                    <div class="sidebar-widget bg-warning text-dark rounded-4 p-4">
-                        <h5 class="fw-bold mb-3">Darurat 24/7</h5>
-                        <p class="mb-3">Untuk kebutuhan darurat di luar jam operasional:</p>
-                        <div class="emergency-contact">
-                            <p class="mb-2 fw-bold">
-                                <i class="fas fa-phone me-2"></i>+62 812 3456 7890
-                            </p>
-                            <small>*Berlaku untuk proyek urgent dengan biaya tambahan</small>
-                        </div>
+                        <p class="text-muted mb-0">Tim ahli dengan pengalaman sejak tahun 2021 di industri konstruksi dan earthwork.</p>
                     </div>
                 </div>
             </div>
@@ -279,15 +199,15 @@
                 <div class="map-container bg-light rounded-4 p-4">
                     <!-- Map and Location -->
                     <div class="map-container-wrapper rounded-4 overflow-hidden shadow position-relative">
-                        <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
-                             alt="Jakarta city map location" 
+                        <img src="{{ asset('images/nusajaya.jpeg') }}"
+                             alt="Lokasi Nusajaya"
                              class="img-fluid w-100" style="height: 400px; object-fit: cover;">
                         <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center" style="background: rgba(0,0,0,0.4);">
                             <div class="text-center text-white">
                                 <i class="fas fa-map-marked-alt" style="font-size: 4rem;"></i>
                                 <h4 class="mt-3">Lokasi Kantor Kami</h4>
-                                <p class="mb-3">Jl. Contoh Alamat No. 123, Jakarta Selatan</p>
-                                <a href="https://maps.google.com" class="btn btn-primary" target="_blank">
+                                <p class="mb-3">Manggarai Selatan, Tebet, Jakarta Selatan</p>
+                                <a href="https://maps.google.com/?q=Manggarai+Selatan+Tebet+Jakarta+Selatan" class="btn btn-primary" target="_blank">
                                     <i class="fas fa-external-link-alt me-2"></i>Buka di Google Maps
                                 </a>
                             </div>
@@ -515,7 +435,7 @@
                     const encodedMessage = encodeURIComponent(prefilledMessage);
 
                     // Update href with pre-filled message
-                    this.href = `https://wa.me/6281234567890?text=${encodedMessage}`;
+                    this.href = `https://wa.me/6285231077779?text=${encodedMessage}`;
                 }
             });
         });

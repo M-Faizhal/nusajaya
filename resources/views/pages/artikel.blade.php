@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'Artikel - Nusajaya')
-@section('description', 'Artikel dan tips terbaru seputar land clearing, earthwork, excavator, dan industri konstruksi dari para ahli Nusajaya.')
+@section('description', 'Artikel dan tips terbaru seputar penyiapan lahan, konstruksi, dan sewa alat konstruksi dari para ahli Nusajaya.')
 
 @section('content')
 <!-- Page Header -->
@@ -49,28 +49,28 @@
                     <div class="artikel-image-placeholder bg-primary text-white d-flex align-items-center justify-content-center" style="height: 250px;">
                         @switch($article['category'])
                             @case('Tips & Tricks')
-                                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                                     alt="{{ $article['title'] }}" 
+                                <img src="{{ asset('images/blog/blog-1.jpg') }}"
+                                     alt="{{ $article['title'] }}"
                                      class="img-fluid w-100 h-100" style="object-fit: cover;">
                                 @break
                             @case('Equipment')
-                                <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                                     alt="{{ $article['title'] }}" 
+                                <img src="{{ asset('images/blog/blog-2.jpg') }}"
+                                     alt="{{ $article['title'] }}"
                                      class="img-fluid w-100 h-100" style="object-fit: cover;">
                                 @break
                             @case('Safety')
-                                <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                                     alt="{{ $article['title'] }}" 
+                                <img src="{{ asset('images/blog/blog-3.jpg') }}"
+                                     alt="{{ $article['title'] }}"
                                      class="img-fluid w-100 h-100" style="object-fit: cover;">
                                 @break
                             @case('Technology')
-                                <img src="https://images.unsplash.com/photo-1592062412843-25c7b45c20c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                                     alt="{{ $article['title'] }}" 
+                                <img src="{{ asset('images/blog/blog-4.jpg') }}"
+                                     alt="{{ $article['title'] }}"
                                      class="img-fluid w-100 h-100" style="object-fit: cover;">
                                 @break
                             @default
-                                <img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                                     alt="{{ $article['title'] }}" 
+                                <img src="{{ asset('images/blog/blog-1.jpg') }}"
+                                     alt="{{ $article['title'] }}"
                                      class="img-fluid w-100 h-100" style="object-fit: cover;">
                         @endswitch
                     </div>
@@ -106,7 +106,7 @@
                                 {{ $article['title'] }}
                             </a>
                         </h3>
-                        
+
                         <p class="artikel-excerpt text-muted mb-4">{{ $article['excerpt'] }}</p>                        <div class="artikel-footer d-flex align-items-center justify-content-between">
                             <div class="author-info">
                                 <small class="text-muted">
@@ -181,48 +181,37 @@
             <p class="lead text-muted">Jelajahi topik-topik yang paling banyak dicari</p>
         </div>
 
-        <div class="row">
-            <div class="col-lg-3 col-md-6 mb-4">
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 mb-4">
                 <div class="topic-card bg-white rounded-4 p-4 text-center shadow-sm h-100">
                     <div class="topic-icon text-primary mb-3" style="font-size: 2.5rem;">
                         <i class="fas fa-tree"></i>
                     </div>
-                    <h5 class="fw-bold mb-3">Land Clearing</h5>
-                    <p class="text-muted mb-3">Tips dan teknik terbaru dalam pembersihan lahan yang efektif dan ramah lingkungan.</p>
+                    <h5 class="fw-bold mb-3">Penyiapan Lahan</h5>
+                    <p class="text-muted mb-3">Tips dan teknik terbaru dalam penyiapan dan pembersihan lahan yang efektif.</p>
                     <a href="#" class="btn btn-outline-primary btn-sm">Lihat Artikel</a>
                 </div>
             </div>
 
-            <div class="col-lg-3 col-md-6 mb-4">
+            <div class="col-lg-4 col-md-6 mb-4">
                 <div class="topic-card bg-white rounded-4 p-4 text-center shadow-sm h-100">
                     <div class="topic-icon text-success mb-3" style="font-size: 2.5rem;">
-                        <i class="fas fa-tools"></i>
+                        <i class="fas fa-building"></i>
                     </div>
-                    <h5 class="fw-bold mb-3">Equipment Guide</h5>
-                    <p class="text-muted mb-3">Panduan memilih dan mengoperasikan excavator serta alat berat lainnya.</p>
+                    <h5 class="fw-bold mb-3">Konstruksi</h5>
+                    <p class="text-muted mb-3">Panduan konstruksi, manajemen proyek, dan standar kualitas bangunan.</p>
                     <a href="#" class="btn btn-outline-success btn-sm">Lihat Artikel</a>
                 </div>
             </div>
 
-            <div class="col-lg-3 col-md-6 mb-4">
+            <div class="col-lg-4 col-md-6 mb-4">
                 <div class="topic-card bg-white rounded-4 p-4 text-center shadow-sm h-100">
                     <div class="topic-icon text-warning mb-3" style="font-size: 2.5rem;">
-                        <i class="fas fa-hard-hat"></i>
+                        <i class="fas fa-tools"></i>
                     </div>
-                    <h5 class="fw-bold mb-3">Safety Standards</h5>
-                    <p class="text-muted mb-3">Panduan keselamatan kerja dan standar K3 dalam industri konstruksi.</p>
+                    <h5 class="fw-bold mb-3">Alat Konstruksi</h5>
+                    <p class="text-muted mb-3">Panduan memilih dan mengoperasikan alat konstruksi serta perawatannya.</p>
                     <a href="#" class="btn btn-outline-warning btn-sm">Lihat Artikel</a>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 mb-4">
-                <div class="topic-card bg-white rounded-4 p-4 text-center shadow-sm h-100">
-                    <div class="topic-icon text-info mb-3" style="font-size: 2.5rem;">
-                        <i class="fas fa-microchip"></i>
-                    </div>
-                    <h5 class="fw-bold mb-3">Technology</h5>
-                    <p class="text-muted mb-3">Inovasi dan teknologi terbaru yang mengubah industri konstruksi.</p>
-                    <a href="#" class="btn btn-outline-info btn-sm">Lihat Artikel</a>
                 </div>
             </div>
         </div>

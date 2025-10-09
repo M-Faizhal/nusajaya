@@ -1,7 +1,17 @@
 @extends('layouts.app')
 
-@section('title', $article['title'] . ' - Artikel Nusajaya')
-@section('description', 'Artikel tentang ' . $article['title'] . ' - Tips dan informasi dari para ahli Nusajaya.')
+@section('title', $article['title'] . ' - Artikel                             @case('Equipment')
+                            @case('Alat Konstruksi')
+                                <img src="{{ asset('images/blog/blog-2.jpg') }}"
+                                     alt="{{ $article['title'] }}"
+                                     class="img-fluid w-100" style="height: 400px; object-fit: cover;">
+                                @break
+                            @case('Safety')
+                            @case('Konstruksi')
+                                <img src="{{ asset('images/blog/blog-3.jpg') }}"
+                                     alt="{{ $article['title'] }}"
+                                     class="img-fluid w-100" style="height: 400px; object-fit: cover;">
+                                @breaksection('description', 'Artikel tentang ' . $article['title'] . ' - Tips dan informasi dari para ahli Nusajaya.')
 
 @section('content')
 <!-- Page Header -->
@@ -61,32 +71,41 @@
             <div class="col-lg-8">
                 <!-- Article Hero Image -->
                 <div class="article-hero-image rounded-4 mb-5 overflow-hidden shadow">
-                    @switch($article['category'])
-                        @case('Tips & Tricks')
-                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
-                                 alt="{{ $article['title'] }}" 
-                                 class="img-fluid w-100" style="height: 400px; object-fit: cover;">
-                            @break
-                        @case('Equipment')
-                            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
-                                 alt="{{ $article['title'] }}" 
-                                 class="img-fluid w-100" style="height: 400px; object-fit: cover;">
-                            @break
-                        @case('Safety')
-                            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
-                                 alt="{{ $article['title'] }}" 
-                                 class="img-fluid w-100" style="height: 400px; object-fit: cover;">
-                            @break
-                        @case('Technology')
-                            <img src="https://images.unsplash.com/photo-1592062412843-25c7b45c20c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
-                                 alt="{{ $article['title'] }}" 
-                                 class="img-fluid w-100" style="height: 400px; object-fit: cover;">
-                            @break
-                        @default
-                            <img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
-                                 alt="{{ $article['title'] }}" 
-                                 class="img-fluid w-100" style="height: 400px; object-fit: cover;">
-                    @endswitch
+                    @if(isset($article['image']) && $article['image'])
+                        <img src="{{ asset('images/blog/' . $article['image']) }}"
+                             alt="{{ $article['title'] }}"
+                             class="img-fluid w-100" style="height: 400px; object-fit: cover;">
+                    @else
+                        @switch($article['category'])
+                            @case('Tips & Tricks')
+                            @case('Penyiapan Lahan')
+                                <img src="{{ asset('images/blog/blog-1.jpg') }}"
+                                     alt="{{ $article['title'] }}"
+                                     class="img-fluid w-100" style="height: 400px; object-fit: cover;">
+                                @break
+                            @case('Equipment')
+                            @case('Alat Konstruksi')
+                                <img src="{{ asset('images/blog/blog-3.jpg') }}"
+                                     alt="{{ $article['title'] }}"
+                                     class="img-fluid w-100" style="height: 400px; object-fit: cover;">
+                                @break
+                            @case('Safety')
+                            @case('Konstruksi')
+                                <img src="{{ asset('images/blog/blog-2.jpg') }}"
+                                     alt="{{ $article['title'] }}"
+                                     class="img-fluid w-100" style="height: 400px; object-fit: cover;">
+                                @break
+                            @case('Technology')
+                                <img src="{{ asset('images/blog/blog-4.jpg') }}"
+                                     alt="{{ $article['title'] }}"
+                                     class="img-fluid w-100" style="height: 400px; object-fit: cover;">
+                                @break
+                            @default
+                                <img src="{{ asset('images/blog/blog-1.jpg') }}"
+                                     alt="{{ $article['title'] }}"
+                                     class="img-fluid w-100" style="height: 400px; object-fit: cover;">
+                        @endswitch
+                    @endif
                 </div>
 
                 <!-- Article Body -->
@@ -269,74 +288,6 @@
                             Artikel Selanjutnya<i class="fas fa-chevron-right ms-2"></i>
                         </a>
                         @endif
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Comments Section (Placeholder) -->
-<section class="py-5">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <div class="comments-section">
-                    <h4 class="fw-bold mb-4">Komentar</h4>
-
-                    <!-- Comment Form -->
-                    <div class="comment-form bg-light rounded-4 p-4 mb-4">
-                        <h5 class="fw-bold mb-3">Tinggalkan Komentar</h5>
-                        <form>
-                            <div class="mb-3">
-                                <label for="commentName" class="form-label">Nama *</label>
-                                <input type="text" class="form-control" id="commentName" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="commentEmail" class="form-label">Email *</label>
-                                <input type="email" class="form-control" id="commentEmail" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="commentMessage" class="form-label">Komentar *</label>
-                                <textarea class="form-control" id="commentMessage" rows="4" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary">
-                                <i class="fas fa-paper-plane me-2"></i>Kirim Komentar
-                            </button>
-                        </form>
-                    </div>
-
-                    <!-- Sample Comments -->
-                    <div class="comments-list">
-                        <div class="comment-item border-bottom pb-4 mb-4">
-                            <div class="d-flex">
-                                <div class="comment-avatar bg-primary text-white rounded-circle me-3 d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
-                                    <i class="fas fa-user"></i>
-                                </div>
-                                <div class="flex-grow-1">
-                                    <div class="comment-header d-flex align-items-center justify-content-between mb-2">
-                                        <h6 class="fw-bold mb-0">Ahmad Wijaya</h6>
-                                        <small class="text-muted">2 hari yang lalu</small>
-                                    </div>
-                                    <p class="mb-0">Artikel yang sangat informatif! Sangat membantu untuk proyek land clearing yang sedang saya kerjakan. Terima kasih atas tipsnya.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="comment-item border-bottom pb-4 mb-4">
-                            <div class="d-flex">
-                                <div class="comment-avatar bg-success text-white rounded-circle me-3 d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
-                                    <i class="fas fa-user"></i>
-                                </div>
-                                <div class="flex-grow-1">
-                                    <div class="comment-header d-flex align-items-center justify-content-between mb-2">
-                                        <h6 class="fw-bold mb-0">Sari Pertiwi</h6>
-                                        <small class="text-muted">5 hari yang lalu</small>
-                                    </div>
-                                    <p class="mb-0">Terima kasih atas informasinya. Apakah ada tips khusus untuk land clearing di area yang memiliki banyak pohon besar?</p>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>

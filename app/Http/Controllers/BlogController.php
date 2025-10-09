@@ -17,7 +17,7 @@ class BlogController extends Controller
                 'author' => 'Tim Ahli Nusajaya',
                 'date' => '2024-03-15',
                 'category' => 'Tips & Tricks',
-                'image' => 'blog-land-clearing.jpg'
+                'image' => 'blog-1.jpg'
             ],
             [
                 'slug' => 'memilih-excavator-yang-tepat',
@@ -27,7 +27,7 @@ class BlogController extends Controller
                 'author' => 'Budi Santoso',
                 'date' => '2024-03-10',
                 'category' => 'Equipment',
-                'image' => 'blog-excavator.jpg'
+                'image' => 'blog-2.jpg'
             ],
             [
                 'slug' => 'standar-keselamatan-konstruksi',
@@ -37,7 +37,7 @@ class BlogController extends Controller
                 'author' => 'Sari Indah',
                 'date' => '2024-03-05',
                 'category' => 'Safety',
-                'image' => 'blog-safety.jpg'
+                'image' => 'blog-3.jpg'
             ],
             [
                 'slug' => 'teknologi-terbaru-konstruksi',
@@ -47,7 +47,7 @@ class BlogController extends Controller
                 'author' => 'Ahmad Wijaya',
                 'date' => '2024-02-28',
                 'category' => 'Technology',
-                'image' => 'blog-technology.jpg'
+                'image' => 'blog-4.jpg'
             ]
         ];
 
@@ -105,7 +105,7 @@ Land clearing yang efektif memerlukan keseimbangan antara efisiensi kerja dan ta
                 'author' => 'Tim Ahli Nusajaya',
                 'date' => '2024-03-15',
                 'category' => 'Tips & Tricks',
-                'image' => 'blog-land-clearing.jpg'
+                'image' => 'blog-1.jpg'
             ],
             'memilih-excavator-yang-tepat' => [
                 'slug' => 'memilih-excavator-yang-tepat',
@@ -192,7 +192,7 @@ Pemilihan excavator yang tepat memerlukan pertimbangan berbagai faktor. Konsulta
                 'author' => 'Budi Santoso',
                 'date' => '2024-03-10',
                 'category' => 'Equipment',
-                'image' => 'blog-excavator.jpg'
+                'image' => 'blog-2.jpg'
             ],
             'standar-keselamatan-konstruksi' => [
                 'slug' => 'standar-keselamatan-konstruksi',
@@ -299,7 +299,7 @@ Keselamatan konstruksi memerlukan komitmen dari semua level organisasi. Dengan i
                 'author' => 'Sari Indah',
                 'date' => '2024-03-05',
                 'category' => 'Safety',
-                'image' => 'blog-safety.jpg'
+                'image' => 'blog-3.jpg'
             ],
             'teknologi-terbaru-konstruksi' => [
                 'slug' => 'teknologi-terbaru-konstruksi',
@@ -433,7 +433,7 @@ Adopsi teknologi dalam konstruksi bukan lagi pilihan, tetapi keharusan untuk tet
                 'author' => 'Ahmad Wijaya',
                 'date' => '2024-02-28',
                 'category' => 'Technology',
-                'image' => 'blog-technology.jpg'
+                'image' => 'blog-4.jpg'
             ]
         ];
 
