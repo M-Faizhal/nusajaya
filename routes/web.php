@@ -13,9 +13,9 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/produk-jasa', [ProductController::class, 'index'])->name('products');
 Route::get('/produk-jasa/{slug}', [ProductController::class, 'show'])->name('products.show');
 
-// Blog Pages
-Route::get('/blog', [BlogController::class, 'index'])->name('blog');
-Route::get('/blog/{slug}', [BlogController::class, 'show'])->name('blog.show');
+// Artikel Pages
+Route::get('/artikel', [BlogController::class, 'index'])->name('artikel');
+Route::get('/artikel/{slug}', [BlogController::class, 'show'])->name('artikel.show');
 
 // Contact Page
 Route::get('/contact', [ContactController::class, 'index'])->name('contact');

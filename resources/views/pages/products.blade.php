@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'Produk & Jasa - Nusajaya')
-@section('description', 'Layanan profesional Nusajaya meliputi Land Clearing, Penimbunan, Pengurukan, dan Persewaan Excavator dengan standar kualitas tinggi dan harga kompetitif.')
+@section('description', 'Layanan profesional Nusajaya meliputi Penyiapan Lahan, Konstruksi, dan Sewa Alat Konstruksi dengan standar kualitas tinggi dan harga kompetitif.')
 
 @section('content')
 <!-- Page Header -->
@@ -33,24 +33,19 @@
                         <div class="col-md-6">
                             <div class="product-image h-100 rounded-start overflow-hidden">
                                 @switch($product['slug'])
-                                    @case('land-clearing')
-                                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                                             alt="Land clearing service" 
+                                    @case('penyiapan-lahan')
+                                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                                             alt="Penyiapan lahan service"
                                              class="img-fluid h-100 w-100" style="object-fit: cover;">
                                         @break
-                                    @case('penimbunan')
-                                        <img src="https://images.unsplash.com/photo-1597149492419-0d900f820b2f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                                             alt="Penimbunan service" 
+                                    @case('konstruksi')
+                                        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                                             alt="Konstruksi service"
                                              class="img-fluid h-100 w-100" style="object-fit: cover;">
                                         @break
-                                    @case('pengurukan')
-                                        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                                             alt="Pengurukan service" 
-                                             class="img-fluid h-100 w-100" style="object-fit: cover;">
-                                        @break
-                                    @case('persewaan-excavator')
-                                        <img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                                             alt="Persewaan excavator service" 
+                                    @case('sewa-alat-konstruksi')
+                                        <img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                                             alt="Sewa alat konstruksi service"
                                              class="img-fluid h-100 w-100" style="object-fit: cover;">
                                         @break
                                 @endswitch
@@ -144,25 +139,25 @@
             <h2 class="section-title">Peralatan <span class="text-primary">Modern</span></h2>
             <p class="lead text-muted">Didukung oleh armada excavator dan alat berat terlengkap</p>
         </div>
-        
+
         <!-- Equipment Gallery -->
         <div class="row mb-5">
             <div class="col-lg-12">
                 <div class="equipment-gallery">
                     <div class="row">
                         <div class="col-md-4 mb-3">
-                            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
-                                 alt="Mini excavator" 
+                            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                                 alt="Mini excavator"
                                  class="img-fluid rounded-4 shadow-sm equipment-gallery-img">
                         </div>
                         <div class="col-md-4 mb-3">
-                            <img src="https://images.unsplash.com/photo-1592062412843-25c7b45c20c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
-                                 alt="Medium excavator" 
+                            <img src="https://images.unsplash.com/photo-1592062412843-25c7b45c20c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                                 alt="Medium excavator"
                                  class="img-fluid rounded-4 shadow-sm equipment-gallery-img">
                         </div>
                         <div class="col-md-4 mb-3">
-                            <img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
-                                 alt="Large excavator" 
+                            <img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                                 alt="Large excavator"
                                  class="img-fluid rounded-4 shadow-sm equipment-gallery-img">
                         </div>
                     </div>

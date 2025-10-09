@@ -10,23 +10,18 @@ class HomeController extends Controller
     {
         $services = [
             [
-                'title' => 'Land Clearing',
-                'description' => 'Pembersihan lahan untuk berbagai keperluan pembangunan dan konstruksi',
+                'title' => 'Penyiapan Lahan',
+                'description' => 'Persiapan dan pembersihan lahan untuk berbagai keperluan pembangunan',
                 'icon' => 'fas fa-tree'
             ],
             [
-                'title' => 'Penimbunan',
-                'description' => 'Layanan penimbunan tanah untuk pemerataan dan persiapan lahan',
-                'icon' => 'fas fa-mountain'
-            ],
-            [
-                'title' => 'Pengurukan',
-                'description' => 'Pengurukan tanah untuk stabilisasi dan perbaikan permukaan',
+                'title' => 'Konstruksi',
+                'description' => 'Layanan konstruksi dan pembangunan infrastruktur berkualitas',
                 'icon' => 'fas fa-layer-group'
             ],
             [
-                'title' => 'Persewaan Excavator',
-                'description' => 'Penyewaan excavator dengan operator berpengalaman',
+                'title' => 'Sewa Alat Konstruksi',
+                'description' => 'Penyewaan alat konstruksi dengan operator berpengalaman',
                 'icon' => 'fas fa-tools'
             ]
         ];

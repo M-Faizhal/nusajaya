@@ -10,60 +10,50 @@ class ProductController extends Controller
     {
         $products = [
             [
-                'slug' => 'land-clearing',
-                'title' => 'Land Clearing',
-                'description' => 'Layanan pembersihan lahan profesional untuk berbagai kebutuhan konstruksi dan pembangunan.',
-                'details' => 'Kami menyediakan layanan land clearing yang komprehensif meliputi pembersihan vegetasi, penebangan pohon, pembongkaran struktur lama, dan persiapan lahan untuk konstruksi. Menggunakan peralatan modern dan tenaga ahli berpengalaman.',
+                'slug' => 'penyiapan-lahan',
+                'title' => 'Penyiapan Lahan',
+                'description' => 'Layanan persiapan dan pembersihan lahan profesional untuk berbagai kebutuhan pembangunan.',
+                'details' => 'Kami menyediakan layanan penyiapan lahan yang komprehensif meliputi pembersihan vegetasi, land clearing, penebangan pohon, pembongkaran struktur lama, dan persiapan lahan untuk konstruksi. Menggunakan peralatan modern dan tenaga ahli berpengalaman.',
                 'features' => [
                     'Pembersihan vegetasi dan semak belukar',
-                    'Penebangan pohon dengan teknik yang aman',
+                    'Land clearing dan penebangan pohon',
                     'Pembongkaran struktur bangunan lama',
                     'Persiapan lahan untuk konstruksi',
+                    'Pemerataan dan grading lahan',
                     'Penanganan limbah organik'
                 ],
-                'image' => 'land-clearing.jpg'
+                'image' => 'penyiapan-lahan.jpg'
             ],
             [
-                'slug' => 'penimbunan',
-                'title' => 'Penimbunan',
-                'description' => 'Jasa penimbunan tanah untuk pemerataan lahan dan pembentukan kontur sesuai kebutuhan proyek.',
-                'details' => 'Layanan penimbunan profesional menggunakan material berkualitas dan teknik yang tepat. Kami memastikan kepadatan dan stabilitas tanah sesuai standar konstruksi untuk berbagai jenis proyek.',
+                'slug' => 'konstruksi',
+                'title' => 'Konstruksi',
+                'description' => 'Layanan konstruksi dan pembangunan infrastruktur dengan standar kualitas tinggi.',
+                'details' => 'Layanan konstruksi profesional untuk berbagai jenis proyek pembangunan. Kami menangani pekerjaan konstruksi mulai dari pondasi, struktur bangunan, hingga finishing dengan standar kualitas dan keselamatan kerja yang tinggi.',
                 'features' => [
-                    'Penimbunan tanah untuk pemerataan lahan',
-                    'Pembentukan kontur sesuai desain',
-                    'Penggunaan material tanah berkualitas',
-                    'Pemadatan dengan alat berat',
-                    'Quality control kepadatan tanah'
+                    'Konstruksi bangunan dan infrastruktur',
+                    'Pekerjaan tanah dan pondasi',
+                    'Pembangunan jalan dan drainase',
+                    'Konstruksi landscape dan hardscape',
+                    'Project management profesional',
+                    'Quality control dan safety management'
                 ],
-                'image' => 'penimbunan.jpg'
+                'image' => 'konstruksi.jpg'
             ],
             [
-                'slug' => 'pengurukan',
-                'title' => 'Pengurukan',
-                'description' => 'Layanan pengurukan untuk stabilisasi tanah dan perbaikan permukaan dengan standar kualitas tinggi.',
-                'details' => 'Pengurukan dilakukan dengan material pilihan dan teknik yang sesuai standar engineering. Proses ini penting untuk memastikan stabilitas dan daya dukung tanah untuk konstruksi di atasnya.',
-                'features' => [
-                    'Pengurukan dengan material berkualitas',
-                    'Stabilisasi tanah lemah',
-                    'Perbaikan permukaan tidak rata',
-                    'Pengurukan di area basah/rawa',
-                    'Kontrol elevasi sesuai rencana'
-                ],
-                'image' => 'pengurukan.jpg'
-            ],
-            [
-                'slug' => 'persewaan-excavator',
-                'title' => 'Persewaan Excavator',
-                'description' => 'Penyewaan excavator dengan berbagai ukuran dan kapasitas, dilengkapi operator berpengalaman.',
-                'details' => 'Kami menyediakan layanan persewaan excavator dengan kondisi prima dan operator bersertifikat. Tersedia berbagai jenis dan ukuran excavator sesuai kebutuhan proyek Anda.',
+                'slug' => 'sewa-alat-konstruksi',
+                'title' => 'Sewa Alat Konstruksi',
+                'description' => 'Penyewaan alat konstruksi dengan berbagai jenis dan kapasitas, dilengkapi operator berpengalaman.',
+                'details' => 'Kami menyediakan layanan sewa alat konstruksi dengan kondisi prima dan operator bersertifikat. Tersedia berbagai jenis alat konstruksi seperti excavator, bulldozer, wheel loader, dan alat berat lainnya sesuai kebutuhan proyek Anda.',
                 'features' => [
                     'Excavator berbagai ukuran (PC50-PC200)',
+                    'Bulldozer dan wheel loader',
+                    'Dump truck dan concrete mixer',
                     'Operator berpengalaman dan tersertifikat',
                     'Perawatan rutin dan kondisi prima',
                     'Fleksibilitas waktu sewa',
                     'Support teknis 24/7'
                 ],
-                'image' => 'excavator.jpg'
+                'image' => 'alat-konstruksi.jpg'
             ]
         ];
 
@@ -73,61 +63,51 @@ class ProductController extends Controller
     public function show($slug)
     {
         $products = [
-            'land-clearing' => [
-                'slug' => 'land-clearing',
-                'title' => 'Land Clearing',
-                'description' => 'Layanan pembersihan lahan profesional untuk berbagai kebutuhan konstruksi dan pembangunan.',
-                'details' => 'Kami menyediakan layanan land clearing yang komprehensif meliputi pembersihan vegetasi, penebangan pohon, pembongkaran struktur lama, dan persiapan lahan untuk konstruksi. Menggunakan peralatan modern dan tenaga ahli berpengalaman.',
+            'penyiapan-lahan' => [
+                'slug' => 'penyiapan-lahan',
+                'title' => 'Penyiapan Lahan',
+                'description' => 'Layanan persiapan dan pembersihan lahan profesional untuk berbagai kebutuhan pembangunan.',
+                'details' => 'Kami menyediakan layanan penyiapan lahan yang komprehensif meliputi pembersihan vegetasi, land clearing, penebangan pohon, pembongkaran struktur lama, dan persiapan lahan untuk konstruksi. Menggunakan peralatan modern dan tenaga ahli berpengalaman.',
                 'features' => [
                     'Pembersihan vegetasi dan semak belukar',
-                    'Penebangan pohon dengan teknik yang aman',
+                    'Land clearing dan penebangan pohon',
                     'Pembongkaran struktur bangunan lama',
                     'Persiapan lahan untuk konstruksi',
+                    'Pemerataan dan grading lahan',
                     'Penanganan limbah organik'
                 ],
-                'image' => 'land-clearing.jpg'
+                'image' => 'penyiapan-lahan.jpg'
             ],
-            'penimbunan' => [
-                'slug' => 'penimbunan',
-                'title' => 'Penimbunan',
-                'description' => 'Jasa penimbunan tanah untuk pemerataan lahan dan pembentukan kontur sesuai kebutuhan proyek.',
-                'details' => 'Layanan penimbunan profesional menggunakan material berkualitas dan teknik yang tepat. Kami memastikan kepadatan dan stabilitas tanah sesuai standar konstruksi untuk berbagai jenis proyek.',
+            'konstruksi' => [
+                'slug' => 'konstruksi',
+                'title' => 'Konstruksi',
+                'description' => 'Layanan konstruksi dan pembangunan infrastruktur dengan standar kualitas tinggi.',
+                'details' => 'Layanan konstruksi profesional untuk berbagai jenis proyek pembangunan. Kami menangani pekerjaan konstruksi mulai dari pondasi, struktur bangunan, hingga finishing dengan standar kualitas dan keselamatan kerja yang tinggi.',
                 'features' => [
-                    'Penimbunan tanah untuk pemerataan lahan',
-                    'Pembentukan kontur sesuai desain',
-                    'Penggunaan material tanah berkualitas',
-                    'Pemadatan dengan alat berat',
-                    'Quality control kepadatan tanah'
+                    'Konstruksi bangunan dan infrastruktur',
+                    'Pekerjaan tanah dan pondasi',
+                    'Pembangunan jalan dan drainase',
+                    'Konstruksi landscape dan hardscape',
+                    'Project management profesional',
+                    'Quality control dan safety management'
                 ],
-                'image' => 'penimbunan.jpg'
+                'image' => 'konstruksi.jpg'
             ],
-            'pengurukan' => [
-                'slug' => 'pengurukan',
-                'title' => 'Pengurukan',
-                'description' => 'Layanan pengurukan untuk stabilisasi tanah dan perbaikan permukaan dengan standar kualitas tinggi.',
-                'details' => 'Pengurukan dilakukan dengan material pilihan dan teknik yang sesuai standar engineering. Proses ini penting untuk memastikan stabilitas dan daya dukung tanah untuk konstruksi di atasnya.',
-                'features' => [
-                    'Pengurukan dengan material berkualitas',
-                    'Stabilisasi tanah lemah',
-                    'Perbaikan permukaan tidak rata',
-                    'Pengurukan di area basah/rawa',
-                    'Kontrol elevasi sesuai rencana'
-                ],
-                'image' => 'pengurukan.jpg'
-            ],
-            'persewaan-excavator' => [
-                'slug' => 'persewaan-excavator',
-                'title' => 'Persewaan Excavator',
-                'description' => 'Penyewaan excavator dengan berbagai ukuran dan kapasitas, dilengkapi operator berpengalaman.',
-                'details' => 'Kami menyediakan layanan persewaan excavator dengan kondisi prima dan operator bersertifikat. Tersedia berbagai jenis dan ukuran excavator sesuai kebutuhan proyek Anda.',
+            'sewa-alat-konstruksi' => [
+                'slug' => 'sewa-alat-konstruksi',
+                'title' => 'Sewa Alat Konstruksi',
+                'description' => 'Penyewaan alat konstruksi dengan berbagai jenis dan kapasitas, dilengkapi operator berpengalaman.',
+                'details' => 'Kami menyediakan layanan sewa alat konstruksi dengan kondisi prima dan operator bersertifikat. Tersedia berbagai jenis alat konstruksi seperti excavator, bulldozer, wheel loader, dan alat berat lainnya sesuai kebutuhan proyek Anda.',
                 'features' => [
                     'Excavator berbagai ukuran (PC50-PC200)',
+                    'Bulldozer dan wheel loader',
+                    'Dump truck dan concrete mixer',
                     'Operator berpengalaman dan tersertifikat',
                     'Perawatan rutin dan kondisi prima',
                     'Fleksibilitas waktu sewa',
                     'Support teknis 24/7'
                 ],
-                'image' => 'excavator.jpg'
+                'image' => 'alat-konstruksi.jpg'
             ]
         ];
 

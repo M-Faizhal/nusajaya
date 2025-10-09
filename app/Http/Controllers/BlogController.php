@@ -51,7 +51,7 @@ class BlogController extends Controller
             ]
         ];
 
-        return view('pages.blog', compact('articles'));
+        return view('pages.artikel', compact('articles'));
     }
 
     public function show($slug)
@@ -443,6 +443,6 @@ Adopsi teknologi dalam konstruksi bukan lagi pilihan, tetapi keharusan untuk tet
             abort(404);
         }
 
-        return view('pages.blog-detail', compact('article'));
+        return view('pages.artikel-detail', compact('article'));
     }
 }

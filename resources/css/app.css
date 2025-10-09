@@ -5,13 +5,13 @@
 
 /* CSS Variables */
 :root {
-    --primary-color: #3498db;
-    --secondary-color: #2c3e50;
-    --accent-color: #2980b9;
+    --primary-color: #1e3a8a;
+    --secondary-color: #1e293b;
+    --accent-color: #1e40af;
     --success-color: #27ae60;
     --warning-color: #f1c40f;
     --danger-color: #e74c3c;
-    --info-color: #5dade2;
+    --info-color: #3b82f6;
     --text-dark: #2c3e50;
     --text-light: #7f8c8d;
     --text-muted: #95a5a6;
@@ -157,7 +157,7 @@ a:hover {
 
 .form-control:focus, .form-select:focus {
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+    box-shadow: 0 0 0 0.2rem rgba(30, 58, 138, 0.25);
     outline: none;
 }
 
@@ -196,7 +196,7 @@ a:hover {
 
 /* Hero Section */
 .hero-section {
-    background: linear-gradient(135deg, rgba(52, 152, 219, 0.9), rgba(41, 128, 185, 0.9));
+    background: linear-gradient(135deg, rgba(30, 58, 138, 0.95), rgba(30, 64, 175, 0.95));
     color: white;
     padding: 8rem 0 4rem;
     position: relative;
@@ -221,7 +221,7 @@ a:hover {
 
 /* Page Header */
 .page-header {
-    background: linear-gradient(135deg, rgba(52, 152, 219, 0.9), rgba(41, 128, 185, 0.9));
+    background: linear-gradient(135deg, rgba(30, 58, 138, 0.95), rgba(30, 64, 175, 0.95));
     color: white;
     padding: 6rem 0 3rem;
     margin-bottom: 0;

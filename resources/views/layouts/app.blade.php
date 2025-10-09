@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'Nusajaya - Solusi Terpercaya untuk Land Clearing & Earthwork')</title>
-    <meta name="description" content="@yield('description', 'Nusajaya menyediakan layanan profesional Land Clearing, Penimbunan, Pengurukan, dan Persewaan Excavator dengan standar kualitas tinggi dan harga kompetitif.')">
+    <meta name="description" content="@yield('description', 'Nusajaya menyediakan layanan profesional Penyiapan Lahan, Konstruksi, dan Sewa Alat Konstruksi dengan standar kualitas tinggi dan harga kompetitif.')">
+    <link rel="icon" type="image/png" href="{{ asset('images/nusajaya.jpeg') }}">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
@@ -21,9 +22,9 @@
 
     <style>
         :root {
-            --primary-color: #3498db;
-            --secondary-color: #2c3e50;
-            --accent-color: #2980b9;
+            --primary-color: #1e3a8a;
+            --secondary-color: #1e293b;
+            --accent-color: #1e40af;
             --text-dark: #333;
             --text-light: #666;
             --bg-light: #f8f9fa;
@@ -42,10 +43,21 @@
         }
 
         .navbar-brand {
-            font-size: 2rem;
-            font-weight: 700;
             color: white !important;
             text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .navbar-brand img {
+            height: 50px;
+            width: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .navbar-brand:hover img {
+            transform: scale(1.05);
         }
 
         .navbar-nav .nav-link {
@@ -64,7 +76,7 @@
         }
 
         .hero-section {
-            background: linear-gradient(135deg, rgba(52,152,219,0.9) 0%, rgba(41,128,185,0.9) 100%), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300"><path fill="%23f8f9fa" d="M0,160L48,181.3C96,203,192,245,288,250.7C384,256,480,224,576,208C672,192,768,192,864,202.7C960,213,1056,235,1152,229.3C1248,224,1344,192,1392,176L1440,160L1440,300L1392,300C1344,300,1248,300,1152,300C1056,300,960,300,864,300C768,300,672,300,576,300C480,300,384,300,288,300C192,300,96,300,48,300L0,300Z"/></svg>');
+            background: linear-gradient(135deg, rgba(30,58,138,0.95) 0%, rgba(30,64,175,0.95) 100%), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300"><path fill="%23f8f9fa" d="M0,160L48,181.3C96,203,192,245,288,250.7C384,256,480,224,576,208C672,192,768,192,864,202.7C960,213,1056,235,1152,229.3C1248,224,1344,192,1392,176L1440,160L1440,300L1392,300C1344,300,1248,300,1152,300C1056,300,960,300,864,300C768,300,672,300,576,300C480,300,384,300,288,300C192,300,96,300,48,300L0,300Z"/></svg>');
             background-size: cover;
             background-position: center;
             color: white;
@@ -85,7 +97,7 @@
 
         .btn-primary:hover {
             transform: translateY(-3px);
-            box-shadow: 0 10px 25px rgba(52,152,219,0.3);
+            box-shadow: 0 10px 25px rgba(30,58,138,0.4);
             background: linear-gradient(135deg, var(--accent-color) 0%, var(--primary-color) 100%);
         }
 
@@ -104,7 +116,7 @@
             background: var(--primary-color);
             border-color: var(--primary-color);
             transform: translateY(-3px);
-            box-shadow: 0 10px 25px rgba(52,152,219,0.3);
+            box-shadow: 0 10px 25px rgba(30,58,138,0.4);
         }
 
         .service-card {
@@ -212,7 +224,7 @@
         }
 
         .page-header {
-            background: linear-gradient(135deg, rgba(52,152,219,0.9) 0%, rgba(41,128,185,0.9) 100%);
+            background: linear-gradient(135deg, rgba(30,58,138,0.95) 0%, rgba(30,64,175,0.95) 100%);
             color: white;
             padding: 6rem 0 3rem 0;
             margin-bottom: 4rem;
@@ -253,7 +265,7 @@
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand" href="{{ route('home') }}">
-                <i class="fas fa-mountain"></i> Nusajaya
+                <img src="{{ asset('images/nusajaya.jpeg') }}" alt="Nusajaya Logo">
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -273,8 +285,8 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {{ request()->routeIs('blog*') ? 'active' : '' }}" href="{{ route('blog') }}">
-                            <i class="fas fa-blog"></i> Blog
+                        <a class="nav-link {{ request()->routeIs('artikel*') ? 'active' : '' }}" href="{{ route('artikel') }}">
+                            <i class="fas fa-newspaper"></i> Artikel
                         </a>
                     </li>
                     <li class="nav-item">
@@ -297,8 +309,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-6 mb-4">
-                    <h5><i class="fas fa-mountain"></i> Nusajaya</h5>
-                    <p class="mb-3">Solusi terpercaya untuk kebutuhan land clearing, penimbunan, pengurukan, dan persewaan excavator dengan standar kualitas tinggi dan pelayanan profesional.</p>
+                    <img src="{{ asset('images/nusajaya.jpeg') }}" alt="Nusajaya Logo" style="height: 80px; width: auto; margin-bottom: 1rem;">
+                    <p class="mb-3">Solusi terpercaya untuk kebutuhan penyiapan lahan, konstruksi, dan sewa alat konstruksi dengan standar kualitas tinggi dan pelayanan profesional.</p>
                     <div class="social-links">
                         <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
@@ -310,10 +322,9 @@
                 <div class="col-lg-2 col-md-6 mb-4">
                     <h5>Layanan</h5>
                     <ul class="footer-links">
-                        <li><a href="{{ route('products') }}">Land Clearing</a></li>
-                        <li><a href="{{ route('products') }}">Penimbunan</a></li>
-                        <li><a href="{{ route('products') }}">Pengurukan</a></li>
-                        <li><a href="{{ route('products') }}">Sewa Excavator</a></li>
+                        <li><a href="{{ route('products') }}">Penyiapan Lahan</a></li>
+                        <li><a href="{{ route('products') }}">Konstruksi</a></li>
+                        <li><a href="{{ route('products') }}">Sewa Alat Konstruksi</a></li>
                     </ul>
                 </div>
 
@@ -321,7 +332,7 @@
                     <h5>Perusahaan</h5>
                     <ul class="footer-links">
                         <li><a href="{{ route('home') }}">Tentang Kami</a></li>
-                        <li><a href="{{ route('blog') }}">Blog</a></li>
+                        <li><a href="{{ route('artikel') }}">Artikel</a></li>
                         <li><a href="{{ route('contact') }}">Kontak</a></li>
                     </ul>
                 </div>
@@ -329,8 +340,8 @@
                 <div class="col-lg-4 col-md-6 mb-4">
                     <h5>Kontak Info</h5>
                     <div class="contact-info">
-                        <p><i class="fas fa-map-marker-alt me-2"></i> Jl. Contoh Alamat No. 123, Jakarta Selatan</p>
-                        <p><i class="fas fa-phone me-2"></i> +62 21 1234 5678</p>
+                        <p><i class="fas fa-map-marker-alt me-2"></i> Manggarai Selatan, Tebet, Jakarta Selatan</p>
+                        <p><i class="fas fa-phone me-2"></i> +62 852 3107 7779</p>
                         <p><i class="fas fa-envelope me-2"></i> info@nusajaya.com</p>
                         <p><i class="fas fa-clock me-2"></i> Senin - Sabtu: 08:00 - 17:00</p>
                     </div>
@@ -376,7 +387,7 @@
         window.addEventListener('scroll', function() {
             const navbar = document.querySelector('.navbar');
             if (window.scrollY > 50) {
-                navbar.style.background = 'linear-gradient(135deg, rgba(52,152,219,0.95) 0%, rgba(41,128,185,0.95) 100%)';
+                navbar.style.background = 'linear-gradient(135deg, rgba(30,58,138,0.98) 0%, rgba(30,64,175,0.98) 100%)';
             } else {
                 navbar.style.background = 'linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%)';
             }

@@ -1,14 +1,14 @@
 @extends('layouts.app')
 
 @section('title', 'Nusajaya - Solusi Terpercaya untuk Land Clearing & Earthwork')
-@section('description', 'Nusajaya menyediakan layanan profesional Land Clearing, Penimbunan, Pengurukan, dan Persewaan Excavator dengan standar kualitas tinggi dan harga kompetitif.')
+@section('description', 'Nusajaya menyediakan layanan profesional Penyiapan Lahan, Konstruksi, dan Sewa Alat Konstruksi dengan standar kualitas tinggi dan harga kompetitif.')
 
 @section('content')
 <!-- Hero Section -->
 <section class="hero-section">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-lg-6">
+            <div class="col-lg-5">
                 <div class="hero-content">
                     <h1 class="display-4 fw-bold mb-4">
                         Solusi Terpercaya untuk
@@ -16,24 +16,24 @@
                         <span class="text-warning">Earthwork</span>
                     </h1>
                     <p class="lead mb-4">
-                        Kami menyediakan layanan profesional dalam bidang land clearing, penimbunan, pengurukan, dan persewaan excavator dengan standar kualitas tinggi dan tim berpengalaman.
+                        Kami menyediakan layanan profesional dalam bidang penyiapan lahan, konstruksi, dan sewa alat konstruksi dengan standar kualitas tinggi dan tim berpengalaman.
                     </p>
                     <div class="hero-buttons">
                         <a href="{{ route('products') }}" class="btn btn-primary btn-lg me-3">
-                            <i class="fas fa-cogs"></i> Lihat Layanan
+                            <i class="fas fa-cogs me-2"></i>Lihat Layanan
                         </a>
                         <a href="{{ route('contact') }}" class="btn btn-outline-light btn-lg">
-                            <i class="fas fa-phone"></i> Hubungi Kami
+                            <i class="fas fa-phone me-2"></i>Hubungi Kami
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-7">
                 <div class="hero-image text-center">
-                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                         alt="Excavator working on construction site" 
+                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                         alt="Excavator working on construction site"
                          class="img-fluid rounded-4 shadow-lg hero-main-image"
-                         style="max-height: 400px; object-fit: cover;">
+                         style="max-height: 500px; object-fit: cover; width: 100%;">
                 </div>
             </div>
         </div>
@@ -45,18 +45,12 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6 mb-4 mb-lg-0">
-                <div class="about-image">
-                    <div class="position-relative">
-                        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                             alt="Construction site with heavy machinery" 
-                             class="img-fluid rounded-4 shadow">
-                        <div class="position-absolute top-0 start-0 w-100 h-100 bg-primary rounded-4 d-flex align-items-center justify-content-center" style="background: linear-gradient(135deg, rgba(52,152,219,0.8), rgba(41,128,185,0.8));">
-                            <div class="text-center text-white">
-                                <i class="fas fa-mountain display-1 mb-3"></i>
-                                <h3>25+ Tahun</h3>
-                                <p class="mb-0">Pengalaman dalam industri konstruksi dan earthwork</p>
-                            </div>
-                        </div>
+                <div class="about-image text-center">
+                    <div class="position-relative d-inline-block">
+                        <img src="{{ asset('images/nusajaya.jpeg') }}"
+                             alt="Nusajaya Logo"
+                             class="img-fluid rounded-4 shadow"
+                             style="max-width: 350px; width: 100%;">
                     </div>
                 </div>
             </div>
@@ -66,7 +60,7 @@
                         Tentang <span class="text-primary">Nusajaya</span>
                     </h2>
                     <p class="text-muted mb-4">
-                        Nusajaya adalah perusahaan yang bergerak dalam bidang jasa konstruksi dengan spesialisasi pada land clearing, penimbunan, pengurukan, dan persewaan alat berat. Dengan pengalaman lebih dari 25 tahun, kami telah menangani berbagai proyek mulai dari skala kecil hingga besar.
+                        Nusajaya adalah perusahaan yang bergerak dalam bidang jasa konstruksi dengan spesialisasi pada penyiapan lahan, konstruksi, dan sewa alat konstruksi. Didirikan sejak 2021, kami telah menangani berbagai proyek mulai dari skala kecil hingga besar dengan dedikasi dan profesionalisme tinggi.
                     </p>
                     <div class="row">
                         <div class="col-sm-6 mb-3">
@@ -128,9 +122,9 @@
             <p class="lead text-muted">Solusi lengkap untuk kebutuhan earthwork dan konstruksi Anda</p>
         </div>
 
-        <div class="row">
+        <div class="row justify-content-center">
             @foreach($services as $service)
-            <div class="col-lg-3 col-md-6 mb-4">
+            <div class="col-lg-4 col-md-6 mb-4">
                 <div class="service-card h-100 text-center">
                     <div class="service-icon">
                         <i class="{{ $service['icon'] }}"></i>
@@ -198,7 +192,7 @@
                         </div>
                         <div class="col-6 mb-4">
                             <div class="stat-card bg-success text-white text-center p-4 rounded-4">
-                                <h3 class="display-6 fw-bold mb-2">25+</h3>
+                                <h3 class="display-6 fw-bold mb-2">4+</h3>
                                 <p class="mb-0">Tahun Pengalaman</p>
                             </div>
                         </div>
@@ -221,52 +215,6 @@
     </div>
 </section>
 
-<!-- Gallery Section -->
-<section class="py-5 bg-light">
-    <div class="container">
-        <div class="text-center mb-5">
-            <h2 class="section-title">Galeri <span class="text-primary">Proyek</span></h2>
-            <p class="lead text-muted">Dokumentasi proyek-proyek yang telah kami kerjakan</p>
-        </div>
-        
-        <div class="row">
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
-                         alt="Land clearing project" 
-                         class="img-fluid rounded-4 shadow-sm gallery-image">
-                    <div class="gallery-overlay">
-                        <h5 class="text-white fw-bold">Land Clearing</h5>
-                        <p class="text-white-50 mb-0">Pembersihan lahan 5 hektare</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1597149492419-0d900f820b2f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
-                         alt="Excavator in action" 
-                         class="img-fluid rounded-4 shadow-sm gallery-image">
-                    <div class="gallery-overlay">
-                        <h5 class="text-white fw-bold">Penimbunan</h5>
-                        <p class="text-white-50 mb-0">Proyek infrastruktur Jakarta</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
-                         alt="Construction equipment" 
-                         class="img-fluid rounded-4 shadow-sm gallery-image">
-                    <div class="gallery-overlay">
-                        <h5 class="text-white fw-bold">Persewaan Excavator</h5>
-                        <p class="text-white-50 mb-0">PC200 untuk proyek perumahan</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
 <!-- CTA Section -->
 <section class="py-5 bg-primary text-white">
     <div class="container">
@@ -280,84 +228,6 @@
                     <i class="fas fa-phone me-2"></i>Hubungi Sekarang
                 </a>
             </div>
-        </div>
-    </div>
-</section>
-
-<!-- Latest Blog Section -->
-<section class="py-5">
-    <div class="container">
-        <div class="text-center mb-5">
-            <h2 class="section-title">Artikel <span class="text-primary">Terbaru</span></h2>
-            <p class="lead text-muted">Tips dan informasi terkini seputar industri konstruksi dan earthwork</p>
-        </div>
-
-        <div class="row">
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card border-0 shadow-sm h-100">
-                    <div class="card-body">
-                        <div class="blog-meta mb-3">
-                            <span class="badge bg-primary">Tips & Tricks</span>
-                            <small class="text-muted ms-2">15 Mar 2024</small>
-                        </div>
-                        <h5 class="card-title fw-bold">
-                            <a href="{{ route('blog.show', 'tips-land-clearing-efektif') }}" class="text-decoration-none text-dark">
-                                Tips Land Clearing yang Efektif dan Ramah Lingkungan
-                            </a>
-                        </h5>
-                        <p class="card-text text-muted">Pelajari teknik-teknik terbaru dalam land clearing yang tidak hanya efektif tetapi juga memperhatikan kelestarian lingkungan.</p>
-                        <a href="{{ route('blog.show', 'tips-land-clearing-efektif') }}" class="btn btn-outline-primary btn-sm">
-                            Baca Selengkapnya <i class="fas fa-arrow-right ms-1"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card border-0 shadow-sm h-100">
-                    <div class="card-body">
-                        <div class="blog-meta mb-3">
-                            <span class="badge bg-success">Equipment</span>
-                            <small class="text-muted ms-2">10 Mar 2024</small>
-                        </div>
-                        <h5 class="card-title fw-bold">
-                            <a href="{{ route('blog.show', 'memilih-excavator-yang-tepat') }}" class="text-decoration-none text-dark">
-                                Panduan Memilih Excavator yang Tepat untuk Proyek Anda
-                            </a>
-                        </h5>
-                        <p class="card-text text-muted">Berbagai jenis excavator memiliki keunggulan masing-masing. Pahami cara memilih yang paling sesuai dengan kebutuhan proyek.</p>
-                        <a href="{{ route('blog.show', 'memilih-excavator-yang-tepat') }}" class="btn btn-outline-primary btn-sm">
-                            Baca Selengkapnya <i class="fas fa-arrow-right ms-1"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card border-0 shadow-sm h-100">
-                    <div class="card-body">
-                        <div class="blog-meta mb-3">
-                            <span class="badge bg-warning">Safety</span>
-                            <small class="text-muted ms-2">5 Mar 2024</small>
-                        </div>
-                        <h5 class="card-title fw-bold">
-                            <a href="{{ route('blog.show', 'standar-keselamatan-konstruksi') }}" class="text-decoration-none text-dark">
-                                Standar Keselamatan dalam Pekerjaan Konstruksi
-                            </a>
-                        </h5>
-                        <p class="card-text text-muted">Keselamatan kerja adalah prioritas utama. Ketahui standar dan prosedur keselamatan yang harus diterapkan di lokasi konstruksi.</p>
-                        <a href="{{ route('blog.show', 'standar-keselamatan-konstruksi') }}" class="btn btn-outline-primary btn-sm">
-                            Baca Selengkapnya <i class="fas fa-arrow-right ms-1"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="text-center mt-4">
-            <a href="{{ route('blog') }}" class="btn btn-primary">
-                Lihat Semua Artikel <i class="fas fa-arrow-right ms-1"></i>
-            </a>
         </div>
     </div>
 </section>
