@@ -22,7 +22,7 @@ class ProductController extends Controller
                     'Pemerataan dan grading lahan',
                     'Penanganan limbah organik'
                 ],
-                'image' => 'penyiapan-lahan.jpg'
+                'image' => 'earthworks.jpg'
             ],
             [
                 'slug' => 'konstruksi',
@@ -53,7 +53,7 @@ class ProductController extends Controller
                     'Fleksibilitas waktu sewa',
                     'Support teknis 24/7'
                 ],
-                'image' => 'alat-konstruksi.jpg'
+                'image' => 'alat-berat.jpg'
             ]
         ];
 
@@ -76,7 +76,7 @@ class ProductController extends Controller
                     'Pemerataan dan grading lahan',
                     'Penanganan limbah organik'
                 ],
-                'image' => 'penyiapan-lahan.jpg'
+                'image' => 'earthworks.jpg'
             ],
             'konstruksi' => [
                 'slug' => 'konstruksi',
@@ -107,7 +107,7 @@ class ProductController extends Controller
                     'Fleksibilitas waktu sewa',
                     'Support teknis 24/7'
                 ],
-                'image' => 'alat-konstruksi.jpg'
+                'image' => 'alat-berat.jpg'
             ]
         ];
 

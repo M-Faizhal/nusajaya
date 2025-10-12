@@ -29,28 +29,33 @@
         <div class="row align-items-center mb-5">
             <div class="col-lg-6 mb-4 mb-lg-0">
                 <div class="product-hero-image rounded-4 overflow-hidden shadow">
-                    @switch($product['slug'])
-                        @case('land-clearing')
-                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                                 alt="{{ $product['title'] }}" 
-                                 class="img-fluid w-100" style="height: 400px; object-fit: cover;">
-                            @break
-                        @case('penimbunan')
-                            <img src="https://images.unsplash.com/photo-1597149492419-0d900f820b2f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                                 alt="{{ $product['title'] }}" 
-                                 class="img-fluid w-100" style="height: 400px; object-fit: cover;">
-                            @break
-                        @case('pengurukan')
-                            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                                 alt="{{ $product['title'] }}" 
-                                 class="img-fluid w-100" style="height: 400px; object-fit: cover;">
-                            @break
-                        @case('persewaan-excavator')
-                            <img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                                 alt="{{ $product['title'] }}" 
-                                 class="img-fluid w-100" style="height: 400px; object-fit: cover;">
-                            @break
-                    @endswitch
+                    @if(isset($product['image']) && $product['image'])
+                        <img src="{{ asset('images/services/' . $product['image']) }}"
+                             alt="{{ $product['title'] }}"
+                             class="img-fluid w-100" style="height: 400px; object-fit: cover;">
+                    @else
+                        @switch($product['slug'])
+                            @case('penyiapan-lahan')
+                                <img src="{{ asset('images/services/earthworks.jpg') }}"
+                                     alt="{{ $product['title'] }}"
+                                     class="img-fluid w-100" style="height: 400px; object-fit: cover;">
+                                @break
+                            @case('konstruksi')
+                                <img src="{{ asset('images/services/konstruksi.jpg') }}"
+                                     alt="{{ $product['title'] }}"
+                                     class="img-fluid w-100" style="height: 400px; object-fit: cover;">
+                                @break
+                            @case('sewa-alat-konstruksi')
+                                <img src="{{ asset('images/services/alat-berat.jpg') }}"
+                                     alt="{{ $product['title'] }}"
+                                     class="img-fluid w-100" style="height: 400px; object-fit: cover;">
+                                @break
+                            @default
+                                <img src="{{ asset('images/services/earthworks.jpg') }}"
+                                     alt="{{ $product['title'] }}"
+                                     class="img-fluid w-100" style="height: 400px; object-fit: cover;">
+                        @endswitch
+                    @endif
                 </div>
             </div>
             <div class="col-lg-6">
@@ -75,9 +80,6 @@
                     <div class="product-actions">
                         <a href="{{ route('contact') }}" class="btn btn-primary btn-lg me-3">
                             <i class="fas fa-phone me-2"></i>Minta Penawaran
-                        </a>
-                        <a href="https://wa.me/6281234567890" class="btn btn-success btn-lg" target="_blank">
-                            <i class="fab fa-whatsapp me-2"></i>WhatsApp
                         </a>
                     </div>
                 </div>
@@ -335,9 +337,6 @@
                 <div class="cta-buttons">
                     <a href="{{ route('contact') }}" class="btn btn-light btn-lg me-2 mb-2 mb-sm-0">
                         <i class="fas fa-phone me-2"></i>Hubungi Kami
-                    </a>
-                    <a href="https://wa.me/6281234567890" class="btn btn-success btn-lg mb-2 mb-sm-0" target="_blank">
-                        <i class="fab fa-whatsapp me-2"></i>WhatsApp
                     </a>
                 </div>
             </div>

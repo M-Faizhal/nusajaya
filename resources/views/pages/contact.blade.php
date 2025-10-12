@@ -5,7 +5,7 @@
 
 @section('content')
 <!-- Page Header -->
-<section class="page-header">
+<section class="page-header" style="padding: 4rem 0 2rem 0; margin-bottom: 2rem;">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -15,25 +15,25 @@
                         <li class="breadcrumb-item active text-white" aria-current="page">Kontak</li>
                     </ol>
                 </nav>
-                <h1 class="display-4 fw-bold mb-3">Hubungi Kami</h1>
-                <p class="lead mb-0">Siap membantu proyek Anda dengan solusi terbaik dan pelayanan profesional</p>
+                <h1 class="display-5 fw-bold mb-2">Hubungi Kami</h1>
+                <p class="lead mb-0">Siap membantu proyek Anda dengan solusi terbaik</p>
             </div>
         </div>
     </div>
 </section>
 
 <!-- Office Image Section -->
-<section class="py-5">
+<section class="py-3">
     <div class="container">
-        <div class="row mb-5">
+        <div class="row mb-3">
             <div class="col-lg-8 mx-auto">
                 <div class="office-image text-center">
                     <img src="{{ asset('images/nusajaya.jpeg') }}"
                          alt="Nusajaya Logo"
-                         class="img-fluid rounded-4 shadow" style="max-width: 400px;">
-                    <div class="mt-3">
-                        <h4 class="fw-bold">Kantor Nusajaya</h4>
-                        <p class="text-muted">Manggarai Selatan, Tebet, Jakarta Selatan</p>
+                         class="img-fluid rounded-4 shadow" style="max-width: 300px;">
+                    <div class="mt-2">
+                        <h5 class="fw-bold mb-1">Kantor Nusajaya</h5>
+                        <p class="text-muted mb-0 small">Manggarai Selatan, Tebet, Jakarta Selatan</p>
                     </div>
                 </div>
             </div>
@@ -42,47 +42,47 @@
 </section>
 
 <!-- Contact Info Section -->
-<section class="py-5 bg-light">
+<section class="py-3 bg-light">
     <div class="container">
         <div class="row">
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="contact-info-card bg-white rounded-4 p-4 shadow-sm h-100 text-center">
-                    <div class="contact-icon bg-primary text-white rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 80px; font-size: 2rem;">
+            <div class="col-lg-4 col-md-6 mb-3">
+                <div class="contact-info-card bg-white rounded-3 p-3 shadow-sm h-100 text-center">
+                    <div class="contact-icon bg-primary text-white rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; font-size: 1.5rem;">
                         <i class="fas fa-phone"></i>
                     </div>
-                    <h5 class="fw-bold mb-3">Telepon</h5>
-                    <p class="text-muted mb-3">Hubungi kami langsung untuk konsultasi cepat</p>
+                    <h6 class="fw-bold mb-2">Telepon</h6>
+                    <p class="text-muted mb-2 small">Hubungi kami langsung untuk konsultasi cepat</p>
                     <div class="contact-details">
-                        <p class="mb-2"><strong>+62 852 3107 7779</strong></p>
+                        <p class="mb-1"><strong>+62 852 3107 7779</strong></p>
                         <small class="text-muted">Senin - Sabtu: 08:00 - 17:00</small>
                     </div>
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="contact-info-card bg-white rounded-4 p-4 shadow-sm h-100 text-center">
-                    <div class="contact-icon bg-success text-white rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 80px; font-size: 2rem;">
+            <div class="col-lg-4 col-md-6 mb-3">
+                <div class="contact-info-card bg-white rounded-3 p-3 shadow-sm h-100 text-center">
+                    <div class="contact-icon bg-success text-white rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; font-size: 1.5rem;">
                         <i class="fas fa-envelope"></i>
                     </div>
-                    <h5 class="fw-bold mb-3">Email</h5>
-                    <p class="text-muted mb-3">Kirim pertanyaan detail tentang proyek Anda</p>
+                    <h6 class="fw-bold mb-2">Email</h6>
+                    <p class="text-muted mb-2 small">Kirim pertanyaan detail tentang proyek Anda</p>
                     <div class="contact-details">
-                        <p class="mb-2"><strong>info@nusajaya.com</strong></p>
+                        <p class="mb-1"><strong>pt.nusajayaunggul@gmail.com</strong></p>
                         <small class="text-muted">Respon dalam 2-4 jam kerja</small>
                     </div>
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="contact-info-card bg-white rounded-4 p-4 shadow-sm h-100 text-center">
-                    <div class="contact-icon bg-warning text-white rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 80px; font-size: 2rem;">
+            <div class="col-lg-4 col-md-6 mb-3">
+                <div class="contact-info-card bg-white rounded-3 p-3 shadow-sm h-100 text-center">
+                    <div class="contact-icon bg-warning text-white rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; font-size: 1.5rem;">
                         <i class="fas fa-map-marker-alt"></i>
                     </div>
-                    <h5 class="fw-bold mb-3">Alamat Kantor</h5>
-                    <p class="text-muted mb-3">Kunjungi kantor kami untuk diskusi langsung</p>
+                    <h6 class="fw-bold mb-2">Alamat Kantor</h6>
+                    <p class="text-muted mb-2 small">Kunjungi kantor kami untuk diskusi langsung</p>
                     <div class="contact-details">
-                        <p class="mb-2"><strong>Manggarai Selatan</strong></p>
-                        <p class="mb-2">Tebet, Jakarta Selatan</p>
+                        <p class="mb-1"><strong>Manggarai Selatan</strong></p>
+                        <p class="mb-1 small">Tebet, Jakarta Selatan</p>
                         <small class="text-muted">Indonesia</small>
                     </div>
                 </div>
@@ -92,14 +92,14 @@
 </section>
 
 <!-- Contact Form Section -->
-<section class="py-5 bg-light">
+<section class="py-4 bg-light">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 mb-5 mb-lg-0">
-                <div class="contact-form-container bg-white rounded-4 p-5 shadow-sm">
-                    <div class="text-center mb-4">
-                        <h2 class="section-title">Kirim <span class="text-primary">Pesan</span></h2>
-                        <p class="lead text-muted">Ceritakan kebutuhan proyek Anda dan dapatkan penawaran terbaik</p>
+            <div class="col-lg-8 mb-4 mb-lg-0">
+                <div class="contact-form-container bg-white rounded-3 p-4 shadow-sm">
+                    <div class="text-center mb-3">
+                        <h3 class="fw-bold">Kirim <span class="text-primary">Pesan</span></h3>
+                        <p class="text-muted mb-0">Ceritakan kebutuhan proyek Anda dan dapatkan penawaran terbaik</p>
                     </div>
 
                     @if(session('success'))
@@ -173,12 +173,12 @@
             <div class="col-lg-4">
                 <div class="contact-sidebar">
                     <!-- Team Image -->
-                    <div class="sidebar-widget bg-white border rounded-4 p-4 mb-4">
-                        <h5 class="fw-bold mb-3">Tim Profesional Kami</h5>
+                    <div class="sidebar-widget bg-white border rounded-3 p-3 mb-3">
+                        <h6 class="fw-bold mb-2">Tim Profesional Kami</h6>
                         <img src="{{ asset('images/nusajaya.jpeg') }}"
                              alt="Nusajaya Professional Team"
-                             class="img-fluid rounded-4 mb-3">
-                        <p class="text-muted mb-0">Tim ahli dengan pengalaman sejak tahun 2021 di industri konstruksi dan earthwork.</p>
+                             class="img-fluid rounded-3 mb-2">
+                        <p class="text-muted mb-0 small">Tim ahli dengan pengalaman sejak tahun 2021 di industri konstruksi dan earthwork.</p>
                     </div>
                 </div>
             </div>
@@ -187,27 +187,27 @@
 </section>
 
 <!-- Map Section -->
-<section class="py-5">
+<section class="py-3">
     <div class="container">
-        <div class="text-center mb-5">
-            <h2 class="section-title">Lokasi <span class="text-primary">Kantor</span></h2>
-            <p class="lead text-muted">Kunjungi kantor kami untuk diskusi langsung dan survey lokasi</p>
+        <div class="text-center mb-3">
+            <h4 class="fw-bold">Lokasi <span class="text-primary">Kantor</span></h4>
+            <p class="text-muted mb-0">Kunjungi kantor kami untuk diskusi langsung dan survey lokasi</p>
         </div>
 
         <div class="row">
             <div class="col-12">
-                <div class="map-container bg-light rounded-4 p-4">
+                <div class="map-container bg-light rounded-3 p-3">
                     <!-- Map and Location -->
-                    <div class="map-container-wrapper rounded-4 overflow-hidden shadow position-relative">
+                    <div class="map-container-wrapper rounded-3 overflow-hidden shadow position-relative">
                         <img src="{{ asset('images/nusajaya.jpeg') }}"
                              alt="Lokasi Nusajaya"
-                             class="img-fluid w-100" style="height: 400px; object-fit: cover;">
+                             class="img-fluid w-100" style="height: 300px; object-fit: cover;">
                         <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center" style="background: rgba(0,0,0,0.4);">
                             <div class="text-center text-white">
-                                <i class="fas fa-map-marked-alt" style="font-size: 4rem;"></i>
-                                <h4 class="mt-3">Lokasi Kantor Kami</h4>
-                                <p class="mb-3">Manggarai Selatan, Tebet, Jakarta Selatan</p>
-                                <a href="https://maps.google.com/?q=Manggarai+Selatan+Tebet+Jakarta+Selatan" class="btn btn-primary" target="_blank">
+                                <i class="fas fa-map-marked-alt" style="font-size: 3rem;"></i>
+                                <h5 class="mt-2">Lokasi Kantor Kami</h5>
+                                <p class="mb-2 small">Manggarai Selatan, Tebet, Jakarta Selatan</p>
+                                <a href="https://maps.google.com/?q=Manggarai+Selatan+Tebet+Jakarta+Selatan" class="btn btn-primary btn-sm" target="_blank">
                                     <i class="fas fa-external-link-alt me-2"></i>Buka di Google Maps
                                 </a>
                             </div>
@@ -220,17 +220,17 @@
 </section>
 
 <!-- FAQ Section -->
-<section class="py-5 bg-light">
+<section class="py-4 bg-light">
     <div class="container">
-        <div class="text-center mb-5">
-            <h2 class="section-title">Pertanyaan <span class="text-primary">Umum</span></h2>
-            <p class="lead text-muted">Jawaban untuk pertanyaan yang sering diajukan</p>
+        <div class="text-center mb-3">
+            <h4 class="fw-bold">Pertanyaan <span class="text-primary">Umum</span></h4>
+            <p class="text-muted mb-0">Jawaban untuk pertanyaan yang sering diajukan</p>
         </div>
 
         <div class="row justify-content-center">
             <div class="col-lg-8">
                 <div class="accordion" id="contactFaqAccordion">
-                    <div class="accordion-item border-0 shadow-sm mb-3">
+                    <div class="accordion-item border-0 shadow-sm mb-2">
                         <h2 class="accordion-header">
                             <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#contactFaq1">
                                 Berapa lama waktu respon untuk penawaran?
@@ -243,7 +243,7 @@
                         </div>
                     </div>
 
-                    <div class="accordion-item border-0 shadow-sm mb-3">
+                    <div class="accordion-item border-0 shadow-sm mb-2">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#contactFaq2">
                                 Apakah survey lokasi dikenakan biaya?
@@ -256,7 +256,7 @@
                         </div>
                     </div>
 
-                    <div class="accordion-item border-0 shadow-sm mb-3">
+                    <div class="accordion-item border-0 shadow-sm mb-2">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#contactFaq3">
                                 Bagaimana sistem pembayaran yang berlaku?
@@ -269,7 +269,7 @@
                         </div>
                     </div>
 
-                    <div class="accordion-item border-0 shadow-sm mb-3">
+                    <div class="accordion-item border-0 shadow-sm mb-2">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#contactFaq4">
                                 Apakah tersedia layanan darurat di luar jam kerja?
@@ -277,7 +277,7 @@
                         </h2>
                         <div id="contactFaq4" class="accordion-collapse collapse" data-bs-parent="#contactFaqAccordion">
                             <div class="accordion-body">
-                                Ya, kami menyediakan layanan darurat 24/7 untuk kebutuhan urgent. Namun akan ada biaya tambahan untuk layanan di luar jam operasional normal. Silakan hubungi nomor darurat: +62 812 3456 7890.
+                                Ya, kami menyediakan layanan darurat untuk kebutuhan urgent dengan koordinasi terlebih dahulu. Silakan hubungi nomor: +62 852 3107 7779.
                             </div>
                         </div>
                     </div>

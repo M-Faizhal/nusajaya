@@ -342,7 +342,7 @@
                     <div class="contact-info">
                         <p><i class="fas fa-map-marker-alt me-2"></i> Manggarai Selatan, Tebet, Jakarta Selatan</p>
                         <p><i class="fas fa-phone me-2"></i> +62 852 3107 7779</p>
-                        <p><i class="fas fa-envelope me-2"></i> info@nusajaya.com</p>
+                        <p><i class="fas fa-envelope me-2"></i> pt.nusajayaunggul@gmail.com</p>
                         <p><i class="fas fa-clock me-2"></i> Senin - Sabtu: 08:00 - 17:00</p>
                     </div>
                 </div>
