@@ -60,48 +60,58 @@ class BlogController extends Controller
             'tips-land-clearing-efektif' => [
                 'slug' => 'tips-land-clearing-efektif',
                 'title' => 'Tips Land Clearing yang Efektif dan Ramah Lingkungan',
-                'content' => 'Land clearing merupakan langkah awal yang penting dalam setiap proyek konstruksi. Proses ini memerlukan perencanaan yang matang dan teknik yang tepat untuk memastikan hasil yang optimal sambil meminimalkan dampak terhadap lingkungan.
+                'content' => '<p class="lead">Land clearing merupakan langkah awal yang penting dalam setiap proyek konstruksi. Proses ini memerlukan perencanaan yang matang dan teknik yang tepat untuk memastikan hasil yang optimal sambil meminimalkan dampak terhadap lingkungan.</p>
 
-## Perencanaan yang Matang
+<h2>Perencanaan yang Matang</h2>
 
-Sebelum memulai pekerjaan land clearing, perencanaan yang detail sangat diperlukan. Ini meliputi:
+<p>Sebelum memulai pekerjaan land clearing, perencanaan yang detail sangat diperlukan. Ini meliputi:</p>
 
-- **Survey lokasi** untuk memahami kondisi tanah dan vegetasi
-- **Identifikasi pohon dan vegetasi** yang perlu dipertahankan
-- **Perencanaan jalur akses** untuk alat berat
-- **Perhitungan volume material** yang akan dihasilkan
+<ul>
+<li><strong>Survey lokasi</strong> untuk memahami kondisi tanah dan vegetasi</li>
+<li><strong>Identifikasi pohon dan vegetasi</strong> yang perlu dipertahankan</li>
+<li><strong>Perencanaan jalur akses</strong> untuk alat berat</li>
+<li><strong>Perhitungan volume material</strong> yang akan dihasilkan</li>
+</ul>
 
-## Teknik Pembersihan yang Efektif
+<h2>Teknik Pembersihan yang Efektif</h2>
 
-### 1. Pembersihan Bertahap
-Lakukan pembersihan secara bertahap, mulai dari vegetasi kecil hingga pohon besar. Hal ini memudahkan akses alat berat dan mengurangi risiko kerusakan.
+<h3>1. Pembersihan Bertahap</h3>
+<p>Lakukan pembersihan secara bertahap, mulai dari vegetasi kecil hingga pohon besar. Hal ini memudahkan akses alat berat dan mengurangi risiko kerusakan.</p>
 
-### 2. Penggunaan Alat yang Tepat
-- **Excavator** untuk penebangan pohon besar
-- **Bulldozer** untuk mendorong material
-- **Mulcher** untuk menghancurkan material organik
+<h3>2. Penggunaan Alat yang Tepat</h3>
+<ul>
+<li><strong>Excavator</strong> untuk penebangan pohon besar</li>
+<li><strong>Bulldozer</strong> untuk mendorong material</li>
+<li><strong>Mulcher</strong> untuk menghancurkan material organik</li>
+</ul>
 
-### 3. Penanganan Material Organik
-Material organik hasil land clearing dapat diolah menjadi:
-- Kompos untuk pupuk organik
-- Biomassa untuk energi alternatif
-- Material landfill yang ramah lingkungan
+<h3>3. Penanganan Material Organik</h3>
+<p>Material organik hasil land clearing dapat diolah menjadi:</p>
+<ul>
+<li>Kompos untuk pupuk organik</li>
+<li>Biomassa untuk energi alternatif</li>
+<li>Material landfill yang ramah lingkungan</li>
+</ul>
 
-## Aspek Lingkungan
+<h2>Aspek Lingkungan</h2>
 
-### Pelestarian Ekosistem
-- Identifikasi dan lindungi habitat satwa langka
-- Pertahankan zona penyangga di sekitar sumber air
-- Replanting di area yang memungkinkan
+<h3>Pelestarian Ekosistem</h3>
+<ul>
+<li>Identifikasi dan lindungi habitat satwa langka</li>
+<li>Pertahankan zona penyangga di sekitar sumber air</li>
+<li>Replanting di area yang memungkinkan</li>
+</ul>
 
-### Pengelolaan Erosi
-- Buat drainage system sementara
-- Gunakan erosion control measures
-- Monitor kualitas air di sekitar lokasi
+<h3>Pengelolaan Erosi</h3>
+<ul>
+<li>Buat drainage system sementara</li>
+<li>Gunakan erosion control measures</li>
+<li>Monitor kualitas air di sekitar lokasi</li>
+</ul>
 
-## Kesimpulan
+<h2>Kesimpulan</h2>
 
-Land clearing yang efektif memerlukan keseimbangan antara efisiensi kerja dan tanggung jawab lingkungan. Dengan perencanaan yang matang dan teknik yang tepat, kita dapat mencapai hasil yang optimal sambil menjaga kelestarian lingkungan.',
+<p>Land clearing yang efektif memerlukan keseimbangan antara efisiensi kerja dan tanggung jawab lingkungan. Dengan perencanaan yang matang dan teknik yang tepat, kita dapat mencapai hasil yang optimal sambil menjaga kelestarian lingkungan.</p>',
                 'author' => 'Tim Ahli Nusajaya',
                 'date' => '2024-03-15',
                 'category' => 'Tips & Tricks',
@@ -110,85 +120,99 @@ Land clearing yang efektif memerlukan keseimbangan antara efisiensi kerja dan ta
             'memilih-excavator-yang-tepat' => [
                 'slug' => 'memilih-excavator-yang-tepat',
                 'title' => 'Panduan Memilih Excavator yang Tepat untuk Proyek Anda',
-                'content' => 'Excavator merupakan alat berat yang sangat penting dalam industri konstruksi dan pertambangan. Pemilihan jenis excavator yang tepat akan sangat mempengaruhi efisiensi dan hasil kerja proyek Anda.
+                'content' => '<p class="lead">Excavator merupakan alat berat yang sangat penting dalam industri konstruksi dan pertambangan. Pemilihan jenis excavator yang tepat akan sangat mempengaruhi efisiensi dan hasil kerja proyek Anda.</p>
 
-## Jenis-Jenis Excavator
+<h2>Jenis-Jenis Excavator</h2>
 
-### 1. Mini Excavator (1-6 ton)
-**Keunggulan:**
-- Mobilitas tinggi di area terbatas
-- Konsumsi bahan bakar efisien
-- Cocok untuk proyek residensial
+<h3>1. Mini Excavator (1-6 ton)</h3>
+<div class="alert alert-success">
+<p><strong>Keunggulan:</strong></p>
+<ul>
+<li>Mobilitas tinggi di area terbatas</li>
+<li>Konsumsi bahan bakar efisien</li>
+<li>Cocok untuk proyek residensial</li>
+</ul>
+<p><strong>Aplikasi:</strong> Landscaping, Utility work, Pekerjaan di area sempit</p>
+</div>
 
-**Aplikasi:**
-- Landscaping
-- Utility work
-- Pekerjaan di area sempit
+<h3>2. Medium Excavator (6-45 ton)</h3>
+<div class="alert alert-info">
+<p><strong>Keunggulan:</strong></p>
+<ul>
+<li>Versatilitas tinggi</li>
+<li>Balance antara power dan mobilitas</li>
+<li>Tersedia berbagai attachment</li>
+</ul>
+<p><strong>Aplikasi:</strong> Road construction, Building construction, Drainage work</p>
+</div>
 
-### 2. Medium Excavator (6-45 ton)
-**Keunggulan:**
-- Versatilitas tinggi
-- Balance antara power dan mobilitas
-- Tersedia berbagai attachment
+<h3>3. Large Excavator (45+ ton)</h3>
+<div class="alert alert-warning">
+<p><strong>Keunggulan:</strong></p>
+<ul>
+<li>Power besar untuk material heavy-duty</li>
+<li>Productivity tinggi</li>
+<li>Cocok untuk proyek skala besar</li>
+</ul>
+<p><strong>Aplikasi:</strong> Mining operation, Large infrastructure, Mass excavation</p>
+</div>
 
-**Aplikasi:**
-- Road construction
-- Building construction
-- Drainage work
+<h2>Faktor Pemilihan</h2>
 
-### 3. Large Excavator (45+ ton)
-**Keunggulan:**
-- Power besar untuk material heavy-duty
-- Productivity tinggi
-- Cocok untuk proyek skala besar
+<h3>1. Skala Proyek</h3>
+<ul>
+<li><strong>Proyek kecil:</strong> Mini excavator</li>
+<li><strong>Proyek menengah:</strong> Medium excavator</li>
+<li><strong>Proyek besar:</strong> Large excavator</li>
+</ul>
 
-**Aplikasi:**
-- Mining operation
-- Large infrastructure
-- Mass excavation
+<h3>2. Kondisi Lokasi</h3>
+<ul>
+<li><strong>Area terbatas:</strong> Pilih unit compact</li>
+<li><strong>Ground condition:</strong> Pertimbangkan track atau wheel</li>
+<li><strong>Akses jalan:</strong> Sesuaikan dengan transportasi</li>
+</ul>
 
-## Faktor Pemilihan
+<h3>3. Jenis Pekerjaan</h3>
+<ul>
+<li><strong>Digging:</strong> Prioritaskan digging force</li>
+<li><strong>Loading:</strong> Fokus pada cycle time</li>
+<li><strong>Demolition:</strong> Pertimbangkan specialized attachment</li>
+</ul>
 
-### 1. Skala Proyek
-- **Proyek kecil**: Mini excavator
-- **Proyek menengah**: Medium excavator
-- **Proyek besar**: Large excavator
+<h3>4. Budget dan Durasi</h3>
+<ul>
+<li><strong>Proyek jangka pendek:</strong> Rental lebih ekonomis</li>
+<li><strong>Proyek jangka panjang:</strong> Pertimbangkan pembelian</li>
+<li><strong>Budget terbatas:</strong> Pilih unit bekas berkualitas</li>
+</ul>
 
-### 2. Kondisi Lokasi
-- **Area terbatas**: Pilih unit compact
-- **Ground condition**: Pertimbangkan track atau wheel
-- **Akses jalan**: Sesuaikan dengan transportasi
+<h2>Tips Operasional</h2>
 
-### 3. Jenis Pekerjaan
-- **Digging**: Prioritaskan digging force
-- **Loading**: Fokus pada cycle time
-- **Demolition**: Pertimbangkan specialized attachment
+<h3>Maintenance Rutin</h3>
+<ul>
+<li>Daily inspection sebelum operasi</li>
+<li>Scheduled maintenance sesuai manual</li>
+<li>Monitor fluid levels dan wear parts</li>
+</ul>
 
-### 4. Budget dan Durasi
-- **Proyek jangka pendek**: Rental lebih ekonomis
-- **Proyek jangka panjang**: Pertimbangkan pembelian
-- **Budget terbatas**: Pilih unit bekas berkualitas
+<h3>Operator Training</h3>
+<ul>
+<li>Pastikan operator bersertifikat</li>
+<li>Regular training untuk safety procedure</li>
+<li>Familiarisasi dengan unit spesifik</li>
+</ul>
 
-## Tips Operasional
+<h3>Fuel Efficiency</h3>
+<ul>
+<li>Gunakan eco mode saat memungkinkan</li>
+<li>Avoid unnecessary idling</li>
+<li>Regular maintenance untuk optimal performance</li>
+</ul>
 
-### Maintenance Rutin
-- Daily inspection sebelum operasi
-- Scheduled maintenance sesuai manual
-- Monitor fluid levels dan wear parts
+<h2>Kesimpulan</h2>
 
-### Operator Training
-- Pastikan operator bersertifikat
-- Regular training untuk safety procedure
-- Familiarisasi dengan unit spesifik
-
-### Fuel Efficiency
-- Gunakan eco mode saat memungkinkan
-- Avoid unnecessary idling
-- Regular maintenance untuk optimal performance
-
-## Kesimpulan
-
-Pemilihan excavator yang tepat memerlukan pertimbangan berbagai faktor. Konsultasikan dengan ahli untuk mendapatkan rekomendasi yang sesuai dengan kebutuhan spesifik proyek Anda.',
+<p>Pemilihan excavator yang tepat memerlukan pertimbangan berbagai faktor. Konsultasikan dengan ahli untuk mendapatkan rekomendasi yang sesuai dengan kebutuhan spesifik proyek Anda.</p>',
                 'author' => 'Budi Santoso',
                 'date' => '2024-03-10',
                 'category' => 'Equipment',
@@ -197,105 +221,158 @@ Pemilihan excavator yang tepat memerlukan pertimbangan berbagai faktor. Konsulta
             'standar-keselamatan-konstruksi' => [
                 'slug' => 'standar-keselamatan-konstruksi',
                 'title' => 'Standar Keselamatan dalam Pekerjaan Konstruksi',
-                'content' => 'Keselamatan kerja di lokasi konstruksi bukan hanya tanggung jawab perusahaan, tetapi juga setiap individu yang terlibat dalam proyek. Penerapan standar keselamatan yang ketat dapat mencegah kecelakaan kerja dan memastikan kelancaran proyek.
+                'content' => '<p class="lead">Keselamatan kerja di lokasi konstruksi bukan hanya tanggung jawab perusahaan, tetapi juga setiap individu yang terlibat dalam proyek. Penerapan standar keselamatan yang ketat dapat mencegah kecelakaan kerja dan memastikan kelancaran proyek.</p>
 
-## Dasar-Dasar K3 Konstruksi
+<h2>Dasar-Dasar K3 Konstruksi</h2>
 
-### Prinsip Hierarki Kontrol Bahaya
-1. **Eliminasi**: Menghilangkan bahaya dari sumbernya
-2. **Substitusi**: Mengganti dengan alternatif yang lebih aman
-3. **Engineering Control**: Kontrol teknis untuk isolasi bahaya
-4. **Administrative Control**: Prosedur dan training
-5. **PPE**: Personal Protective Equipment sebagai lini terakhir
+<h3>Prinsip Hierarki Kontrol Bahaya</h3>
+<ol>
+<li><strong>Eliminasi:</strong> Menghilangkan bahaya dari sumbernya</li>
+<li><strong>Substitusi:</strong> Mengganti dengan alternatif yang lebih aman</li>
+<li><strong>Engineering Control:</strong> Kontrol teknis untuk isolasi bahaya</li>
+<li><strong>Administrative Control:</strong> Prosedur dan training</li>
+<li><strong>PPE:</strong> Personal Protective Equipment sebagai lini terakhir</li>
+</ol>
 
-## Personal Protective Equipment (PPE)
+<h2>Personal Protective Equipment (PPE)</h2>
 
-### PPE Wajib di Konstruksi
-- **Safety Helmet**: Melindungi kepala dari benturan
-- **Safety Shoes**: Perlindungan kaki dari tusukan dan benturan
-- **High-Vis Vest**: Meningkatkan visibility
-- **Safety Glasses**: Perlindungan mata dari debu dan debris
-- **Work Gloves**: Perlindungan tangan sesuai jenis pekerjaan
+<h3>PPE Wajib di Konstruksi</h3>
+<div class="row">
+<div class="col-md-6">
+<ul>
+<li><strong>Safety Helmet:</strong> Melindungi kepala dari benturan</li>
+<li><strong>Safety Shoes:</strong> Perlindungan kaki dari tusukan dan benturan</li>
+<li><strong>High-Vis Vest:</strong> Meningkatkan visibility</li>
+</ul>
+</div>
+<div class="col-md-6">
+<ul>
+<li><strong>Safety Glasses:</strong> Perlindungan mata dari debu dan debris</li>
+<li><strong>Work Gloves:</strong> Perlindungan tangan sesuai jenis pekerjaan</li>
+</ul>
+</div>
+</div>
 
-### PPE Khusus
-- **Fall Protection**: Harness dan lanyard untuk work at height
-- **Respiratory Protection**: Masker untuk area berdebu
-- **Hearing Protection**: Ear plug di area bising
+<h3>PPE Khusus</h3>
+<ul>
+<li><strong>Fall Protection:</strong> Harness dan lanyard untuk work at height</li>
+<li><strong>Respiratory Protection:</strong> Masker untuk area berdebu</li>
+<li><strong>Hearing Protection:</strong> Ear plug di area bising</li>
+</ul>
 
-## Hazard Identification
+<h2>Hazard Identification</h2>
 
-### Bahaya Umum di Konstruksi
-1. **Struck-by Hazards**
-   - Falling objects
-   - Moving equipment
-   - Flying particles
+<h3>Bahaya Umum di Konstruksi</h3>
 
-2. **Caught-in/between Hazards**
-   - Trench collapse
-   - Equipment entanglement
-   - Structural collapse
+<div class="card mb-3">
+<div class="card-body">
+<h5 class="card-title">1. Struck-by Hazards</h5>
+<ul>
+<li>Falling objects</li>
+<li>Moving equipment</li>
+<li>Flying particles</li>
+</ul>
+</div>
+</div>
 
-3. **Fall Hazards**
-   - Unprotected edges
-   - Ladder accidents
-   - Scaffold failures
+<div class="card mb-3">
+<div class="card-body">
+<h5 class="card-title">2. Caught-in/between Hazards</h5>
+<ul>
+<li>Trench collapse</li>
+<li>Equipment entanglement</li>
+<li>Structural collapse</li>
+</ul>
+</div>
+</div>
 
-4. **Electrical Hazards**
-   - Power lines
-   - Faulty equipment
-   - Wet conditions
+<div class="card mb-3">
+<div class="card-body">
+<h5 class="card-title">3. Fall Hazards</h5>
+<ul>
+<li>Unprotected edges</li>
+<li>Ladder accidents</li>
+<li>Scaffold failures</li>
+</ul>
+</div>
+</div>
 
-## Safety Procedures
+<div class="card mb-3">
+<div class="card-body">
+<h5 class="card-title">4. Electrical Hazards</h5>
+<ul>
+<li>Power lines</li>
+<li>Faulty equipment</li>
+<li>Wet conditions</li>
+</ul>
+</div>
+</div>
 
-### Pre-Work Safety Briefing
-- Review hari ini dan identifikasi bahaya
-- Diskusi method statement
-- Emergency response plan
-- Weather conditions assessment
+<h2>Safety Procedures</h2>
 
-### Equipment Safety
-- Daily inspection checklist
-- Proper maintenance schedule
-- Operator certification requirements
-- Safe operating procedures
+<h3>Pre-Work Safety Briefing</h3>
+<ul>
+<li>Review hari ini dan identifikasi bahaya</li>
+<li>Diskusi method statement</li>
+<li>Emergency response plan</li>
+<li>Weather conditions assessment</li>
+</ul>
 
-### Site Safety Management
-- Safety signage dan barrier
-- Traffic management plan
-- Emergency evacuation routes
-- First aid facilities
+<h3>Equipment Safety</h3>
+<ul>
+<li>Daily inspection checklist</li>
+<li>Proper maintenance schedule</li>
+<li>Operator certification requirements</li>
+<li>Safe operating procedures</li>
+</ul>
 
-## Emergency Response
+<h3>Site Safety Management</h3>
+<ul>
+<li>Safety signage dan barrier</li>
+<li>Traffic management plan</li>
+<li>Emergency evacuation routes</li>
+<li>First aid facilities</li>
+</ul>
 
-### Emergency Action Plan
-- Emergency contact numbers
-- Evacuation procedures
-- Assembly points
-- Communication methods
+<h2>Emergency Response</h2>
 
-### Incident Reporting
-- Immediate response procedures
-- Investigation methodology
-- Corrective action implementation
-- Lesson learned documentation
+<h3>Emergency Action Plan</h3>
+<ul>
+<li>Emergency contact numbers</li>
+<li>Evacuation procedures</li>
+<li>Assembly points</li>
+<li>Communication methods</li>
+</ul>
 
-## Safety Culture
+<h3>Incident Reporting</h3>
+<ul>
+<li>Immediate response procedures</li>
+<li>Investigation methodology</li>
+<li>Corrective action implementation</li>
+<li>Lesson learned documentation</li>
+</ul>
 
-### Management Commitment
-- Safety policy implementation
-- Resource allocation for safety
-- Regular safety audits
-- Recognition programs
+<h2>Safety Culture</h2>
 
-### Worker Participation
-- Safety suggestion system
-- Hazard reporting encouragement
-- Safety training participation
-- Peer safety monitoring
+<h3>Management Commitment</h3>
+<ul>
+<li>Safety policy implementation</li>
+<li>Resource allocation for safety</li>
+<li>Regular safety audits</li>
+<li>Recognition programs</li>
+</ul>
 
-## Kesimpulan
+<h3>Worker Participation</h3>
+<ul>
+<li>Safety suggestion system</li>
+<li>Hazard reporting encouragement</li>
+<li>Safety training participation</li>
+<li>Peer safety monitoring</li>
+</ul>
 
-Keselamatan konstruksi memerlukan komitmen dari semua level organisasi. Dengan implementasi standar keselamatan yang konsisten dan budaya safety yang kuat, kita dapat menciptakan lingkungan kerja yang aman dan produktif.',
+<h2>Kesimpulan</h2>
+
+<p>Keselamatan konstruksi memerlukan komitmen dari semua level organisasi. Dengan implementasi standar keselamatan yang konsisten dan budaya safety yang kuat, kita dapat menciptakan lingkungan kerja yang aman dan produktif.</p>',
                 'author' => 'Sari Indah',
                 'date' => '2024-03-05',
                 'category' => 'Safety',
@@ -304,132 +381,182 @@ Keselamatan konstruksi memerlukan komitmen dari semua level organisasi. Dengan i
             'teknologi-terbaru-konstruksi' => [
                 'slug' => 'teknologi-terbaru-konstruksi',
                 'title' => 'Teknologi Terbaru dalam Industri Konstruksi',
-                'content' => 'Industri konstruksi terus berkembang dengan adopsi teknologi baru yang membantu meningkatkan efisiensi, akurasi, dan keselamatan kerja. Dari penggunaan drone untuk survei hingga IoT untuk monitoring, mari kita eksplorasi teknologi yang mengubah cara kerja kita.
+                'content' => '<p class="lead">Industri konstruksi terus berkembang dengan adopsi teknologi baru yang membantu meningkatkan efisiensi, akurasi, dan keselamatan kerja. Dari penggunaan drone untuk survei hingga IoT untuk monitoring, mari kita eksplorasi teknologi yang mengubah cara kerja kita.</p>
 
-## Drone Technology
+<h2>Drone Technology</h2>
 
-### Aplikasi Drone dalam Konstruksi
-- **Site Survey**: Mapping dan topografi akurat
-- **Progress Monitoring**: Dokumentasi kemajuan proyek
-- **Safety Inspection**: Inspeksi area berbahaya
-- **Volume Calculation**: Perhitungan material stockpile
+<h3>Aplikasi Drone dalam Konstruksi</h3>
+<ul>
+<li><strong>Site Survey:</strong> Mapping dan topografi akurat</li>
+<li><strong>Progress Monitoring:</strong> Dokumentasi kemajuan proyek</li>
+<li><strong>Safety Inspection:</strong> Inspeksi area berbahaya</li>
+<li><strong>Volume Calculation:</strong> Perhitungan material stockpile</li>
+</ul>
 
-### Keunggulan Drone
-- Efisiensi waktu survei meningkat 90%
-- Akurasi data hingga centimeter level
-- Dokumentasi visual yang komprehensif
-- Mengurangi risiko keselamatan pekerja
+<div class="alert alert-info">
+<h5>Keunggulan Drone</h5>
+<ul class="mb-0">
+<li>Efisiensi waktu survei meningkat 90%</li>
+<li>Akurasi data hingga centimeter level</li>
+<li>Dokumentasi visual yang komprehensif</li>
+<li>Mengurangi risiko keselamatan pekerja</li>
+</ul>
+</div>
 
-## Building Information Modeling (BIM)
+<h2>Building Information Modeling (BIM)</h2>
 
-### Manfaat BIM
-- **Visualization**: 3D modeling untuk better understanding
-- **Collaboration**: Platform terpusat untuk semua stakeholder
-- **Clash Detection**: Identifikasi konflik sebelum konstruksi
-- **Quantity Take-off**: Perhitungan material otomatis
+<h3>Manfaat BIM</h3>
+<ul>
+<li><strong>Visualization:</strong> 3D modeling untuk better understanding</li>
+<li><strong>Collaboration:</strong> Platform terpusat untuk semua stakeholder</li>
+<li><strong>Clash Detection:</strong> Identifikasi konflik sebelum konstruksi</li>
+<li><strong>Quantity Take-off:</strong> Perhitungan material otomatis</li>
+</ul>
 
-### BIM 4D dan 5D
-- **4D BIM**: Integrasi dengan scheduling
-- **5D BIM**: Integrasi dengan cost management
-- **Real-time Updates**: Sinkronisasi dengan progress aktual
+<h3>BIM 4D dan 5D</h3>
+<ul>
+<li><strong>4D BIM:</strong> Integrasi dengan scheduling</li>
+<li><strong>5D BIM:</strong> Integrasi dengan cost management</li>
+<li><strong>Real-time Updates:</strong> Sinkronisasi dengan progress aktual</li>
+</ul>
 
-## Internet of Things (IoT)
+<h2>Internet of Things (IoT)</h2>
 
-### Smart Construction Site
-- **Equipment Monitoring**: Real-time status alat berat
-- **Environmental Sensors**: Monitoring cuaca dan kualitas udara
-- **Worker Safety**: Wearable device untuk safety monitoring
-- **Material Tracking**: RFID untuk inventory management
+<h3>Smart Construction Site</h3>
+<ul>
+<li><strong>Equipment Monitoring:</strong> Real-time status alat berat</li>
+<li><strong>Environmental Sensors:</strong> Monitoring cuaca dan kualitas udara</li>
+<li><strong>Worker Safety:</strong> Wearable device untuk safety monitoring</li>
+<li><strong>Material Tracking:</strong> RFID untuk inventory management</li>
+</ul>
 
-### Predictive Maintenance
-- Sensor monitoring untuk early warning
-- Maintenance scheduling berbasis data
-- Reduced downtime dan repair cost
-- Extended equipment lifespan
+<h3>Predictive Maintenance</h3>
+<div class="card">
+<div class="card-body">
+<ul class="mb-0">
+<li>Sensor monitoring untuk early warning</li>
+<li>Maintenance scheduling berbasis data</li>
+<li>Reduced downtime dan repair cost</li>
+<li>Extended equipment lifespan</li>
+</ul>
+</div>
+</div>
 
-## Artificial Intelligence & Machine Learning
+<h2>Artificial Intelligence & Machine Learning</h2>
 
-### AI Applications
-- **Predictive Analytics**: Forecasting project risks
-- **Quality Control**: Automated defect detection
-- **Safety Monitoring**: Computer vision for safety compliance
-- **Resource Optimization**: AI-driven scheduling
+<h3>AI Applications</h3>
+<ul>
+<li><strong>Predictive Analytics:</strong> Forecasting project risks</li>
+<li><strong>Quality Control:</strong> Automated defect detection</li>
+<li><strong>Safety Monitoring:</strong> Computer vision for safety compliance</li>
+<li><strong>Resource Optimization:</strong> AI-driven scheduling</li>
+</ul>
 
-### Machine Learning Benefits
-- Pattern recognition dari historical data
-- Continuous improvement through learning
-- Automated decision making
-- Risk mitigation strategies
+<h3>Machine Learning Benefits</h3>
+<ul>
+<li>Pattern recognition dari historical data</li>
+<li>Continuous improvement through learning</li>
+<li>Automated decision making</li>
+<li>Risk mitigation strategies</li>
+</ul>
 
-## Mobile Technology
+<h2>Mobile Technology</h2>
 
-### Construction Apps
-- **Project Management**: Real-time collaboration tools
-- **Quality Assurance**: Digital checklists dan forms
-- **Time Tracking**: Automated timesheet
-- **Communication**: Instant messaging dan video calls
+<h3>Construction Apps</h3>
+<ul>
+<li><strong>Project Management:</strong> Real-time collaboration tools</li>
+<li><strong>Quality Assurance:</strong> Digital checklists dan forms</li>
+<li><strong>Time Tracking:</strong> Automated timesheet</li>
+<li><strong>Communication:</strong> Instant messaging dan video calls</li>
+</ul>
 
-### Cloud Integration
-- Real-time data synchronization
-- Remote access capabilities
-- Centralized document management
-- Backup dan disaster recovery
+<h3>Cloud Integration</h3>
+<ul>
+<li>Real-time data synchronization</li>
+<li>Remote access capabilities</li>
+<li>Centralized document management</li>
+<li>Backup dan disaster recovery</li>
+</ul>
 
-## Augmented Reality (AR) & Virtual Reality (VR)
+<h2>Augmented Reality (AR) & Virtual Reality (VR)</h2>
 
-### AR Applications
-- **On-site Visualization**: Overlay digital models pada real world
-- **Training**: Interactive learning experience
-- **Maintenance**: Step-by-step guidance
-- **Quality Control**: Compare as-built vs design
+<h3>AR Applications</h3>
+<ul>
+<li><strong>On-site Visualization:</strong> Overlay digital models pada real world</li>
+<li><strong>Training:</strong> Interactive learning experience</li>
+<li><strong>Maintenance:</strong> Step-by-step guidance</li>
+<li><strong>Quality Control:</strong> Compare as-built vs design</li>
+</ul>
 
-### VR Applications
-- **Design Review**: Immersive model walkthrough
-- **Safety Training**: Virtual hazard scenarios
-- **Client Presentation**: Realistic project visualization
-- **Remote Collaboration**: Virtual meetings
+<h3>VR Applications</h3>
+<ul>
+<li><strong>Design Review:</strong> Immersive model walkthrough</li>
+<li><strong>Safety Training:</strong> Virtual hazard scenarios</li>
+<li><strong>Client Presentation:</strong> Realistic project visualization</li>
+<li><strong>Remote Collaboration:</strong> Virtual meetings</li>
+</ul>
 
-## Advanced Materials & Equipment
+<h2>Advanced Materials & Equipment</h2>
 
-### Smart Materials
-- Self-healing concrete
-- Phase-change materials untuk energy efficiency
-- Smart glass dengan variable transparency
-- Lightweight composite materials
+<h3>Smart Materials</h3>
+<div class="row">
+<div class="col-md-6">
+<ul>
+<li>Self-healing concrete</li>
+<li>Phase-change materials untuk energy efficiency</li>
+</ul>
+</div>
+<div class="col-md-6">
+<ul>
+<li>Smart glass dengan variable transparency</li>
+<li>Lightweight composite materials</li>
+</ul>
+</div>
+</div>
 
-### Autonomous Equipment
-- Self-driving dump trucks
-- Automated excavators
-- Robotic bricklaying
-- 3D printing construction
+<h3>Autonomous Equipment</h3>
+<ul>
+<li>Self-driving dump trucks</li>
+<li>Automated excavators</li>
+<li>Robotic bricklaying</li>
+<li>3D printing construction</li>
+</ul>
 
-## Implementation Strategy
+<h2>Implementation Strategy</h2>
 
-### Adoption Roadmap
-1. **Assessment**: Evaluate current technology landscape
-2. **Pilot Projects**: Start dengan small-scale implementation
-3. **Training**: Staff development untuk new technologies
-4. **Scale-up**: Gradual expansion across projects
-5. **Continuous Improvement**: Regular evaluation dan updates
+<h3>Adoption Roadmap</h3>
+<ol>
+<li><strong>Assessment:</strong> Evaluate current technology landscape</li>
+<li><strong>Pilot Projects:</strong> Start dengan small-scale implementation</li>
+<li><strong>Training:</strong> Staff development untuk new technologies</li>
+<li><strong>Scale-up:</strong> Gradual expansion across projects</li>
+<li><strong>Continuous Improvement:</strong> Regular evaluation dan updates</li>
+</ol>
 
-### ROI Considerations
-- Initial investment vs long-term benefits
-- Productivity improvement measurements
-- Quality enhancement metrics
-- Safety incident reduction
-- Client satisfaction improvements
+<h3>ROI Considerations</h3>
+<ul>
+<li>Initial investment vs long-term benefits</li>
+<li>Productivity improvement measurements</li>
+<li>Quality enhancement metrics</li>
+<li>Safety incident reduction</li>
+<li>Client satisfaction improvements</li>
+</ul>
 
-## Future Trends
+<h2>Future Trends</h2>
 
-### Emerging Technologies
-- Quantum computing for complex calculations
-- Blockchain for supply chain transparency
-- 5G connectivity for real-time applications
-- Sustainable construction technologies
+<div class="alert alert-warning">
+<h5>Emerging Technologies</h5>
+<ul class="mb-0">
+<li>Quantum computing for complex calculations</li>
+<li>Blockchain for supply chain transparency</li>
+<li>5G connectivity for real-time applications</li>
+<li>Sustainable construction technologies</li>
+</ul>
+</div>
 
-## Kesimpulan
+<h2>Kesimpulan</h2>
 
-Adopsi teknologi dalam konstruksi bukan lagi pilihan, tetapi keharusan untuk tetap kompetitif. Perusahaan yang berhasil mengintegrasikan teknologi dengan baik akan memiliki keunggulan dalam efisiensi, kualitas, dan keselamatan proyek.',
+<p>Adopsi teknologi dalam konstruksi bukan lagi pilihan, tetapi keharusan untuk tetap kompetitif. Perusahaan yang berhasil mengintegrasikan teknologi dengan baik akan memiliki keunggulan dalam efisiensi, kualitas, dan keselamatan proyek.</p>',
                 'author' => 'Ahmad Wijaya',
                 'date' => '2024-02-28',
                 'category' => 'Technology',

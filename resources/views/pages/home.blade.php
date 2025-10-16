@@ -30,7 +30,7 @@
             </div>
             <div class="col-lg-7">
                 <div class="hero-image text-center">
-                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                    <img src="{{ asset('images/gallery/home.jpg') }}"
                          alt="Excavator working on construction site"
                          class="img-fluid rounded-4 shadow-lg hero-main-image"
                          style="max-height: 500px; object-fit: cover; width: 100%;">
